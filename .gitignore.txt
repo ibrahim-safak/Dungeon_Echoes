@@ -1,0 +1,28 @@
+# Bu klasörler Unity tarafından her açılışta tekrar oluşturulur, depoya atılmaz.
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Visual Studio / IDE geçici dosyaları
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
