@@ -7,7 +7,7 @@ public abstract class BaseCharacter : MonoBehaviour , IDamageable
     [Header("Temel Özellikler")]
     [SerializeField] protected float maxHealth = 100f;
     protected float currentHealth;
-
+    private float health;
     public abstract float Health { get; }
 
     protected virtual void Start()

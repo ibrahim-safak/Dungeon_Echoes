@@ -7,7 +7,7 @@ using UnityEngine;
 public class PhysicalMovement : MonoBehaviour
 {
     [Header("Fizik Ayarlarý")]
-    [SerializeField] private float moveSpeed = 6f;
+    [SerializeField] public float moveSpeed = 6f;
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private LayerMask groundLayer; 
 

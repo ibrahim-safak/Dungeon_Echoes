@@ -6,10 +6,21 @@ public class PlayerCharacter : BaseCharacter
 {
     public override float Health => throw new System.NotImplementedException();
 
-    public override void die()
+    protected override void Start()
     {
-        throw new System.NotImplementedException();
+        base.Start(); // BaseCharacter'daki can doldurmayý çalýþtýr
     }
 
- 
+    public override void die()
+    {
+        Debug.Log("OYUNCU ÖLDÜ! Game Over.");
+        // Buraya oyun bitiþ ekraný kodu gelecek.
+    }
+
+    // Alt sýnýflar (Warrior, Mage) bunu dolduracak
+    public virtual void Attack()
+    {
+        // Boþ
+    }
+    
 }

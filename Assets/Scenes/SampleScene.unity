@@ -210,6 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4738114}
   - component: {fileID: 4738115}
+  - component: {fileID: 4738116}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -294,6 +295,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &4738116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &4867311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -459,6 +483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8304059}
   - component: {fileID: 8304060}
+  - component: {fileID: 8304061}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -543,6 +568,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &8304061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &8603777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2664,6 +2712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 73498695}
   - component: {fileID: 73498696}
+  - component: {fileID: 73498697}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -2748,6 +2797,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &73498697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73498694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &74230282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -3160,6 +3232,167 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7186397052036007447, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
   m_PrefabInstance: {fileID: 81374846}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &81643349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+  m_PrefabInstance: {fileID: 1646698979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &81643350
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81643349}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.26795244
+  m_Height: 1.8503689
+  m_Direction: 1
+  m_Center: {x: 0.020412922, y: 0.9118033, z: -0.028422892}
+--- !u!114 &81643351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81643349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbe8f170e03bd643af03a4173f5d151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  jumpForce: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!54 &81643352
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81643349}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &81643353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81643349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feee981562256b04c9c8d8397a0fcd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+--- !u!114 &81643354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81643349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ba71a7a390e9b478423251d280f258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &81643355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81643349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88fab464014268a4f99c5d82756e6d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 963194228}
+  mouseSensitivity: 2
+--- !u!114 &81643356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81643349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96475af64f075b04eb34ca897355c394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 120
+  attackRange: 3
+  Damage: 20
+  attackCooldown: 0.35
+  runSpeed: 5
+  dashForce: 200
+  dashDuration: 0.5
+  dashCooldown: 2
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  CameraTransform: {fileID: 963194228}
+--- !u!4 &81643357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+  m_PrefabInstance: {fileID: 1646698979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &81643358
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81643349}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afcf8182a28de1b4fbe37586e43706b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &81754596 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -3252,6 +3485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 86128047}
   - component: {fileID: 86128048}
+  - component: {fileID: 86128049}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -3336,6 +3570,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &86128049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86128046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &86864046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -4851,6 +5108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 134749967}
   - component: {fileID: 134749968}
+  - component: {fileID: 134749969}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -4935,6 +5193,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &134749969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134749966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &139888499 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -4950,6 +5231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 140168153}
   - component: {fileID: 140168154}
+  - component: {fileID: 140168155}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -5034,6 +5316,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &140168155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140168152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &141336289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6338,6 +6643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 185871721}
   - component: {fileID: 185871722}
+  - component: {fileID: 185871723}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -6422,6 +6728,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &185871723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185871720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &188235454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7339,6 +7668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 206452243}
   - component: {fileID: 206452244}
+  - component: {fileID: 206452245}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -7423,6 +7753,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &206452245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206452242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &206668459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7643,6 +7996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 213889060}
   - component: {fileID: 213889061}
+  - component: {fileID: 213889062}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -7727,6 +8081,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &213889062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213889059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &217049219
 GameObject:
   m_ObjectHideFlags: 0
@@ -7737,6 +8114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217049220}
   - component: {fileID: 217049221}
+  - component: {fileID: 217049222}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -7821,6 +8199,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &217049222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217049219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &218159371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9640,6 +10041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 259519648}
   - component: {fileID: 259519649}
+  - component: {fileID: 259519650}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -9724,6 +10126,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &259519650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259519647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &263351632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -10372,6 +10797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277154391}
   - component: {fileID: 277154392}
+  - component: {fileID: 277154393}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -10456,6 +10882,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &277154393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277154390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &277991946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12206,6 +12655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 350707652}
   - component: {fileID: 350707653}
+  - component: {fileID: 350707654}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -12290,6 +12740,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &350707654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350707651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &351353724 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -12790,6 +13263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 367413472}
   - component: {fileID: 367413473}
+  - component: {fileID: 367413474}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -12874,6 +13348,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &367413474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367413471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &370702616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -15529,6 +16026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 455192865}
   - component: {fileID: 455192866}
+  - component: {fileID: 455192867}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -15613,6 +16111,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &455192867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455192864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &457599712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -16013,6 +16534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 464319507}
   - component: {fileID: 464319508}
+  - component: {fileID: 464319509}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -16097,6 +16619,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &464319509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464319506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &464434488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16338,6 +16883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 467992157}
   - component: {fileID: 467992158}
+  - component: {fileID: 467992159}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -16422,6 +16968,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &467992159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467992156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &469442584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -16715,6 +17284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 481666230}
   - component: {fileID: 481666231}
+  - component: {fileID: 481666232}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -16799,6 +17369,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &481666232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481666229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &483031316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -17247,6 +17840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 493876886}
   - component: {fileID: 493876887}
+  - component: {fileID: 493876888}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -17331,6 +17925,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &493876888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493876885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &494147371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17692,6 +18309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514687239}
   - component: {fileID: 514687240}
+  - component: {fileID: 514687241}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -17776,6 +18394,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &514687241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514687238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &515268641 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -19960,6 +20601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 571997019}
   - component: {fileID: 571997020}
+  - component: {fileID: 571997021}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -20044,6 +20686,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &571997021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571997018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &572553365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20307,6 +20972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 577386255}
   - component: {fileID: 577386256}
+  - component: {fileID: 577386257}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -20391,6 +21057,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &577386257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577386254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &579599612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20781,6 +21470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 586554789}
   - component: {fileID: 586554790}
+  - component: {fileID: 586554791}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -20865,6 +21555,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &586554791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586554788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &589554645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21644,6 +22357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 613175357}
   - component: {fileID: 613175358}
+  - component: {fileID: 613175359}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -21728,6 +22442,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &613175359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613175356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &614059744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21857,6 +22594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615774835}
   - component: {fileID: 615774836}
+  - component: {fileID: 615774837}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -21941,6 +22679,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &615774837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615774834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &617517055 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -22340,6 +23101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 627235475}
   - component: {fileID: 627235476}
+  - component: {fileID: 627235477}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -22424,6 +23186,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &627235477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627235474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &628014810
 GameObject:
   m_ObjectHideFlags: 0
@@ -22434,6 +23219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 628014811}
   - component: {fileID: 628014812}
+  - component: {fileID: 628014813}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -22518,6 +23304,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &628014813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628014810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &628098251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23550,6 +24359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 661270173}
   - component: {fileID: 661270174}
+  - component: {fileID: 661270175}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -23634,6 +24444,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &661270175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661270172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &661699851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -23727,6 +24560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 670096589}
   - component: {fileID: 670096590}
+  - component: {fileID: 670096591}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -23811,6 +24645,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &670096591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670096588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &671709782 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -24059,6 +24916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 674159229}
   - component: {fileID: 674159230}
+  - component: {fileID: 674159231}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -24143,6 +25001,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &674159231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674159228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &676067183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24632,6 +25513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 689357430}
   - component: {fileID: 689357431}
+  - component: {fileID: 689357432}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -24716,6 +25598,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &689357432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689357429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &691286048 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -25060,6 +25965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 695008207}
   - component: {fileID: 695008208}
+  - component: {fileID: 695008209}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -25144,6 +26050,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &695008209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695008206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &695889655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25264,6 +26193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 700594592}
   - component: {fileID: 700594593}
+  - component: {fileID: 700594594}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -25348,6 +26278,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &700594594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700594591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &700680771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25458,6 +26411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705006205}
   - component: {fileID: 705006206}
+  - component: {fileID: 705006207}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -25542,6 +26496,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &705006207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705006204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &705469255 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -26240,6 +27217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 730465136}
   - component: {fileID: 730465137}
+  - component: {fileID: 730465138}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -26324,6 +27302,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &730465138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730465135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &732737651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26595,6 +27596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 736878099}
   - component: {fileID: 736878100}
+  - component: {fileID: 736878101}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -26679,6 +27681,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &736878101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736878098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &736880606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27698,6 +28723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 752864665}
   - component: {fileID: 752864666}
+  - component: {fileID: 752864667}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -27782,6 +28808,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &752864667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752864664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &753385220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27869,6 +28918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 753720662}
   - component: {fileID: 753720663}
+  - component: {fileID: 753720664}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -27953,6 +29003,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &753720664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753720661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &753780143 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -29625,6 +30698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784358200}
   - component: {fileID: 784358201}
+  - component: {fileID: 784358202}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -29709,6 +30783,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &784358202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784358199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &785055535
 GameObject:
   m_ObjectHideFlags: 0
@@ -29719,6 +30816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 785055536}
   - component: {fileID: 785055537}
+  - component: {fileID: 785055538}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -29803,6 +30901,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &785055538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785055535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &787304991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31285,6 +32406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 831596236}
   - component: {fileID: 831596237}
+  - component: {fileID: 831596238}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -31369,6 +32491,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &831596238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831596235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &831842907
 GameObject:
   m_ObjectHideFlags: 0
@@ -31379,6 +32524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 831842908}
   - component: {fileID: 831842909}
+  - component: {fileID: 831842910}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -31463,6 +32609,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &831842910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831842907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &835390278 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -31739,6 +32908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 839771555}
   - component: {fileID: 839771556}
+  - component: {fileID: 839771557}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -31823,6 +32993,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &839771557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839771554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &840969519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33276,6 +34469,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: b31c62c35ced11c4383176ecffe930c9, type: 3}
+--- !u!4 &878465923 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+  m_PrefabInstance: {fileID: 1155212654}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &878830559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -33544,6 +34742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 890286528}
   - component: {fileID: 890286529}
+  - component: {fileID: 890286530}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -33628,6 +34827,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &890286530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890286527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &894327017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34473,6 +35695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 916389734}
   - component: {fileID: 916389735}
+  - component: {fileID: 916389736}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -34557,6 +35780,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &916389736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916389733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &918691224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35185,6 +36431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 929927162}
   - component: {fileID: 929927163}
+  - component: {fileID: 929927164}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -35269,6 +36516,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &929927164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929927161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &930515496 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -36278,12 +37548,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15478173, y: 0.0062188506, z: -0.00097455364, w: 0.9879286}
-  m_LocalPosition: {x: 0.095, y: 1.447, z: 0.199}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.12864235, y: -0.014564592, z: 0.0018913054, w: -0.9915823}
+  m_LocalPosition: {x: 0.001750946, y: 1.7060567, z: 0.14280653}
+  m_LocalScale: {x: 0.74758154, y: 0.8053958, z: 0.64892274}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1076621376}
+  m_Father: {fileID: 81643357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963200285
 GameObject:
@@ -36295,6 +37565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963200286}
   - component: {fileID: 963200287}
+  - component: {fileID: 963200288}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -36379,6 +37650,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &963200288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963200285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &964699098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36619,6 +37913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 969203811}
   - component: {fileID: 969203812}
+  - component: {fileID: 969203813}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -36703,6 +37998,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &969203813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969203810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &970011023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36812,6 +38130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 973949936}
   - component: {fileID: 973949937}
+  - component: {fileID: 973949938}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -36896,6 +38215,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &973949938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973949935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &975060285 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -37490,6 +38832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988468742}
   - component: {fileID: 988468743}
+  - component: {fileID: 988468744}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -37574,6 +38917,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &988468744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988468741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &989094875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -39682,6 +41048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053160073}
   - component: {fileID: 1053160074}
+  - component: {fileID: 1053160075}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -39766,6 +41133,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1053160075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053160072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1054127849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -40577,6 +41967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1075701706}
   - component: {fileID: 1075701707}
+  - component: {fileID: 1075701708}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -40661,202 +42052,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1076621372
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1076621376}
-  - component: {fileID: 1076621375}
-  - component: {fileID: 1076621374}
-  - component: {fileID: 1076621373}
-  - component: {fileID: 1076621380}
-  - component: {fileID: 1076621379}
-  - component: {fileID: 1076621378}
-  - component: {fileID: 1076621377}
-  - component: {fileID: 1076621381}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &1076621373
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076621372}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1076621374
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076621372}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1076621375
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076621372}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1076621376
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076621372}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.6838, y: 1.2534, z: -1.6546}
-  m_LocalScale: {x: 0.7476, y: 0.8234, z: 0.6309}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 963194228}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1076621377
+--- !u!114 &1075701708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076621372}
+  m_GameObject: {fileID: 1075701705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dbe8f170e03bd643af03a4173f5d151, type: 3}
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 5
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
---- !u!114 &1076621378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076621372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ba71a7a390e9b478423251d280f258, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1076621379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076621372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feee981562256b04c9c8d8397a0fcd61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
---- !u!54 &1076621380
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076621372}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!114 &1076621381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076621372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88fab464014268a4f99c5d82756e6d42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 963194228}
-  mouseSensitivity: 2
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1079997610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -40991,6 +42209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083803218}
   - component: {fileID: 1083803219}
+  - component: {fileID: 1083803220}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -41075,6 +42294,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1083803220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083803217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1084409365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41992,6 +43234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1102225344}
   - component: {fileID: 1102225345}
+  - component: {fileID: 1102225346}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -42076,6 +43319,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1102225346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102225343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1103846772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43196,6 +44462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1119184709}
   - component: {fileID: 1119184710}
+  - component: {fileID: 1119184711}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -43280,6 +44547,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1119184711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119184708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1120302794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43976,6 +45266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127439253}
   - component: {fileID: 1127439254}
+  - component: {fileID: 1127439255}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -44060,6 +45351,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1127439255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127439252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1133428420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45119,6 +46433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1154171312}
   - component: {fileID: 1154171313}
+  - component: {fileID: 1154171314}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -45203,6 +46518,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1154171314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154171311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1154699063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45329,6 +46667,67 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9c33f225c6ee98243a57390a7235bd50, type: 3}
+--- !u!1001 &1155212654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1863494106}
+    m_Modifications:
+    - target: {fileID: 323333351367080586, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_Name
+      value: PP_Theme_10_Dagger_002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.049429458
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0036515843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.017026894
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70709157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0044274274
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0044004284
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7070945
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096456449144725552, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078219201087156106, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 87b744073f89d274ea9986018a77d4e4, type: 3}
 --- !u!1 &1156188804
 GameObject:
   m_ObjectHideFlags: 0
@@ -45339,6 +46738,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1156188805}
   - component: {fileID: 1156188806}
+  - component: {fileID: 1156188807}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -45423,6 +46823,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1156188807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156188804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1159438022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -47831,6 +49254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1216377829}
   - component: {fileID: 1216377830}
+  - component: {fileID: 1216377831}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -47915,6 +49339,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1216377831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216377828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1217246376
 GameObject:
   m_ObjectHideFlags: 0
@@ -47925,6 +49372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217246377}
   - component: {fileID: 1217246378}
+  - component: {fileID: 1217246379}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -48009,6 +49457,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1217246379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217246376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1219570241 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -48334,6 +49805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1225993452}
   - component: {fileID: 1225993453}
+  - component: {fileID: 1225993454}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -48418,6 +49890,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1225993454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225993451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1226362519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48903,6 +50398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1240108615}
   - component: {fileID: 1240108616}
+  - component: {fileID: 1240108617}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -48987,6 +50483,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1240108617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240108614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1242138222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51202,6 +52721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1289558593}
   - component: {fileID: 1289558594}
+  - component: {fileID: 1289558595}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -51286,6 +52806,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1289558595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289558592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1292030296 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -53040,6 +54583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338334136}
   - component: {fileID: 1338334137}
+  - component: {fileID: 1338334138}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -53124,6 +54668,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1338334138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338334135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1343355623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53536,6 +55103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350277364}
   - component: {fileID: 1350277365}
+  - component: {fileID: 1350277366}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -53620,6 +55188,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1350277366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350277363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1351479850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56782,6 +58373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419121535}
   - component: {fileID: 1419121536}
+  - component: {fileID: 1419121537}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -56866,6 +58458,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1419121537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419121534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1423472273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -59223,6 +60838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498046628}
   - component: {fileID: 1498046629}
+  - component: {fileID: 1498046630}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -59307,6 +60923,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1498046630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498046627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1500684173 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -60173,6 +61812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1535364151}
   - component: {fileID: 1535364152}
+  - component: {fileID: 1535364153}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -60257,6 +61897,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1535364153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535364150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1535486524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60344,6 +62007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1535928538}
   - component: {fileID: 1535928539}
+  - component: {fileID: 1535928540}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -60428,6 +62092,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1535928540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535928537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1536067504
 GameObject:
   m_ObjectHideFlags: 0
@@ -60485,6 +62172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1539278134}
   - component: {fileID: 1539278135}
+  - component: {fileID: 1539278136}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -60569,6 +62257,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1539278136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539278133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1542612500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60908,6 +62619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1547600386}
   - component: {fileID: 1547600387}
+  - component: {fileID: 1547600388}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -60992,6 +62704,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1547600388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547600385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1548198003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -61278,6 +63013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554969761}
   - component: {fileID: 1554969762}
+  - component: {fileID: 1554969763}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -61362,6 +63098,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1554969763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554969760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1555251062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61471,6 +63230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1559073616}
   - component: {fileID: 1559073617}
+  - component: {fileID: 1559073618}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -61555,6 +63315,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1559073618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559073615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1560201119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -62613,6 +64396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590042412}
   - component: {fileID: 1590042413}
+  - component: {fileID: 1590042414}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -62697,6 +64481,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1590042414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590042411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1590205096 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -63702,6 +65509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1619555019}
   - component: {fileID: 1619555020}
+  - component: {fileID: 1619555021}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -63786,6 +65594,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1619555021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619555018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1620582214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64000,6 +65831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1626036463}
   - component: {fileID: 1626036464}
+  - component: {fileID: 1626036465}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -64084,6 +65916,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1626036465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626036462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1629026631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -64589,6 +66444,717 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
   m_PrefabInstance: {fileID: 1654809696}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1646698979
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.134
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8191740002585371210, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.3230956
+      objectReference: {fileID: 0}
+    - target: {fileID: -8191740002585371210, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.49316967
+      objectReference: {fileID: 0}
+    - target: {fileID: -8191740002585371210, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 15.296635
+      objectReference: {fileID: 0}
+    - target: {fileID: -8068027186691560116, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 13.740899
+      objectReference: {fileID: 0}
+    - target: {fileID: -8068027186691560116, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.22770204
+      objectReference: {fileID: 0}
+    - target: {fileID: -8068027186691560116, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.9272832
+      objectReference: {fileID: 0}
+    - target: {fileID: -8021001004253913084, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 6.8554983
+      objectReference: {fileID: 0}
+    - target: {fileID: -8021001004253913084, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 1.3328638
+      objectReference: {fileID: 0}
+    - target: {fileID: -8021001004253913084, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 2.8732777
+      objectReference: {fileID: 0}
+    - target: {fileID: -7219772299731422950, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.37712178
+      objectReference: {fileID: 0}
+    - target: {fileID: -7219772299731422950, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -16.42449
+      objectReference: {fileID: 0}
+    - target: {fileID: -7219772299731422950, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -17.504236
+      objectReference: {fileID: 0}
+    - target: {fileID: -6874584590210671055, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 50.347107
+      objectReference: {fileID: 0}
+    - target: {fileID: -6874584590210671055, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 36.427433
+      objectReference: {fileID: 0}
+    - target: {fileID: -6874584590210671055, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 22.365158
+      objectReference: {fileID: 0}
+    - target: {fileID: -6857788192064577062, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 1.5596092
+      objectReference: {fileID: 0}
+    - target: {fileID: -6857788192064577062, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.33419555
+      objectReference: {fileID: 0}
+    - target: {fileID: -6857788192064577062, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 6.240834
+      objectReference: {fileID: 0}
+    - target: {fileID: -6803169544883306252, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 79.30181
+      objectReference: {fileID: 0}
+    - target: {fileID: -6803169544883306252, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 98.06132
+      objectReference: {fileID: 0}
+    - target: {fileID: -6803169544883306252, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -176.1205
+      objectReference: {fileID: 0}
+    - target: {fileID: -6768225281626788248, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 32.659416
+      objectReference: {fileID: 0}
+    - target: {fileID: -6768225281626788248, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -1.1811045
+      objectReference: {fileID: 0}
+    - target: {fileID: -6768225281626788248, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.0659804
+      objectReference: {fileID: 0}
+    - target: {fileID: -6024149945523619558, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 32.606117
+      objectReference: {fileID: 0}
+    - target: {fileID: -6024149945523619558, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -1.3085189
+      objectReference: {fileID: 0}
+    - target: {fileID: -6024149945523619558, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.4422565
+      objectReference: {fileID: 0}
+    - target: {fileID: -5665043316445423941, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 11.044132
+      objectReference: {fileID: 0}
+    - target: {fileID: -5665043316445423941, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.11191126
+      objectReference: {fileID: 0}
+    - target: {fileID: -5665043316445423941, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.26374936
+      objectReference: {fileID: 0}
+    - target: {fileID: -5480977901411583989, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 64.65106
+      objectReference: {fileID: 0}
+    - target: {fileID: -5480977901411583989, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -10.479544
+      objectReference: {fileID: 0}
+    - target: {fileID: -5480977901411583989, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -16.409143
+      objectReference: {fileID: 0}
+    - target: {fileID: -3746190272939815206, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -67.17011
+      objectReference: {fileID: 0}
+    - target: {fileID: -3746190272939815206, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -5.6286807
+      objectReference: {fileID: 0}
+    - target: {fileID: -3746190272939815206, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 6.616598
+      objectReference: {fileID: 0}
+    - target: {fileID: -3480699329000672020, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.37053227
+      objectReference: {fileID: 0}
+    - target: {fileID: -3480699329000672020, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.8238871
+      objectReference: {fileID: 0}
+    - target: {fileID: -3480699329000672020, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.44480607
+      objectReference: {fileID: 0}
+    - target: {fileID: -3432401550182100168, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 28.74416
+      objectReference: {fileID: 0}
+    - target: {fileID: -3432401550182100168, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -22.574032
+      objectReference: {fileID: 0}
+    - target: {fileID: -3432401550182100168, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -21.628532
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -19.033094
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -39.943184
+      objectReference: {fileID: 0}
+    - target: {fileID: -3321919801592875672, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 8.66131
+      objectReference: {fileID: 0}
+    - target: {fileID: -2899422035419094908, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 64.72919
+      objectReference: {fileID: 0}
+    - target: {fileID: -2899422035419094908, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -10.107614
+      objectReference: {fileID: 0}
+    - target: {fileID: -2899422035419094908, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -15.880076
+      objectReference: {fileID: 0}
+    - target: {fileID: -2770666803903516498, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 40.79881
+      objectReference: {fileID: 0}
+    - target: {fileID: -2770666803903516498, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 9.852257
+      objectReference: {fileID: 0}
+    - target: {fileID: -2770666803903516498, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.80193317
+      objectReference: {fileID: 0}
+    - target: {fileID: -2594260964506120097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 8.927644
+      objectReference: {fileID: 0}
+    - target: {fileID: -2594260964506120097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.9986973
+      objectReference: {fileID: 0}
+    - target: {fileID: -2594260964506120097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.3505176
+      objectReference: {fileID: 0}
+    - target: {fileID: -2389525917609993686, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 7.944552
+      objectReference: {fileID: 0}
+    - target: {fileID: -2389525917609993686, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.1630781
+      objectReference: {fileID: 0}
+    - target: {fileID: -2389525917609993686, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.0466697
+      objectReference: {fileID: 0}
+    - target: {fileID: -2072040086291044643, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -56.400913
+      objectReference: {fileID: 0}
+    - target: {fileID: -2072040086291044643, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20.192303
+      objectReference: {fileID: 0}
+    - target: {fileID: -2072040086291044643, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -18.482536
+      objectReference: {fileID: 0}
+    - target: {fileID: -1864740628597940677, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 8.897879
+      objectReference: {fileID: 0}
+    - target: {fileID: -1864740628597940677, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.4293573
+      objectReference: {fileID: 0}
+    - target: {fileID: -1864740628597940677, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -5.8718543
+      objectReference: {fileID: 0}
+    - target: {fileID: -1812909498023395591, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 3.3529744
+      objectReference: {fileID: 0}
+    - target: {fileID: -1812909498023395591, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.30465767
+      objectReference: {fileID: 0}
+    - target: {fileID: -1812909498023395591, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -36.431683
+      objectReference: {fileID: 0}
+    - target: {fileID: -1070350730909333850, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 80.68879
+      objectReference: {fileID: 0}
+    - target: {fileID: -1070350730909333850, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -8.680312
+      objectReference: {fileID: 0}
+    - target: {fileID: -1070350730909333850, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -14.9883795
+      objectReference: {fileID: 0}
+    - target: {fileID: -870823317777057635, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.59368294
+      objectReference: {fileID: 0}
+    - target: {fileID: -870823317777057635, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -34.11309
+      objectReference: {fileID: 0}
+    - target: {fileID: -870823317777057635, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -43.648575
+      objectReference: {fileID: 0}
+    - target: {fileID: -104578136787704052, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 80.7549
+      objectReference: {fileID: 0}
+    - target: {fileID: -104578136787704052, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -7.0586543
+      objectReference: {fileID: 0}
+    - target: {fileID: -104578136787704052, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -13.40817
+      objectReference: {fileID: 0}
+    - target: {fileID: 366175167995203695, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 6.867431
+      objectReference: {fileID: 0}
+    - target: {fileID: 366175167995203695, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 1.2769068
+      objectReference: {fileID: 0}
+    - target: {fileID: 366175167995203695, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 2.866879
+      objectReference: {fileID: 0}
+    - target: {fileID: 608321761475470972, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 82.63815
+      objectReference: {fileID: 0}
+    - target: {fileID: 608321761475470972, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -38.420742
+      objectReference: {fileID: 0}
+    - target: {fileID: 608321761475470972, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -28.189636
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_Name
+      value: Ch05_nonPBR
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092408308860062549, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 32.57354
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092408308860062549, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -1.4064535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092408308860062549, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.794205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189529853000058984, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 80.94761
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189529853000058984, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.19037414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189529853000058984, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -6.577837
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330755669629619180, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 4.7790728
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330755669629619180, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.6406352
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330755669629619180, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.142604
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564860333797465651, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 10.336155
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564860333797465651, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.9385543
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564860333797465651, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -2.2823164
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852576806548013000, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -12.331023
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852576806548013000, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 31.202503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852576806548013000, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -19.04749
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559285840627121667, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -32.29687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559285840627121667, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -7.6694717
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559285840627121667, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 157.8404
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563496969622287784, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 5.246765
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563496969622287784, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 1.9536183
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563496969622287784, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 67.17878
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916570863362053800, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 36.785416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916570863362053800, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -9.7663145
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916570863362053800, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.0662732
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183749884578473501, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 7.295446
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183749884578473501, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.09416053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3183749884578473501, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.3309617
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667946887678727147, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 80.83747
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667946887678727147, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -4.6734724
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667946887678727147, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -11.065747
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747904710347621765, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 13.294328
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747904710347621765, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -1.4694808
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747904710347621765, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.6962495
+      objectReference: {fileID: 0}
+    - target: {fileID: 5048025441337412694, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 22.38342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5048025441337412694, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -21.273668
+      objectReference: {fileID: 0}
+    - target: {fileID: 5048025441337412694, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -31.525639
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097370190579632962, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 32.549477
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097370190579632962, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -1.4929804
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097370190579632962, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -5.132115
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372056943023685468, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 65.004776
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372056943023685468, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -8.795012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372056943023685468, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -13.745189
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465940246521907071, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -6.096278
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465940246521907071, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 58.124016
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465940246521907071, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.3027858
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000407479487422213, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 18.788464
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000407479487422213, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 43.851757
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000407479487422213, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 34.67457
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341119541397085964, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 64.83566
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341119541397085964, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -9.590329
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341119541397085964, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -15.09149
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502182839619065283, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -30.982374
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502182839619065283, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -20.590275
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502182839619065283, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 7.091263
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515712193588681746, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 16.684298
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515712193588681746, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -7.4937134
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515712193588681746, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.5240651
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655383506977046455, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 14.237925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655383506977046455, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.79100496
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655383506977046455, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -2.4684381
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078722787440015773, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 70.77291
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078722787440015773, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -98.157104
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078722787440015773, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 177.69266
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666680083751660616, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 4.8508472
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666680083751660616, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.028332353
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666680083751660616, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.081427
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169382868667117632, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -25.835577
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169382868667117632, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 1.0448318
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169382868667117632, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -161.78418
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255111157037086696, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 5.358673
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255111157037086696, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.5612704
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255111157037086696, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -2.535136
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447082967072642302, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 15.474216
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447082967072642302, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 15.02946
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447082967072642302, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 33.25304
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 963194228}
+    - targetCorrespondingSourceObject: {fileID: -1070350730909333850, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 878465923}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81643356}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81643355}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81643354}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81643353}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81643352}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81643351}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81643350}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81643358}
+  m_SourcePrefab: {fileID: 100100000, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
 --- !u!1 &1646878652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -67368,6 +69934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1711215500}
   - component: {fileID: 1711215501}
+  - component: {fileID: 1711215502}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -67452,6 +70019,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1711215502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711215499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1711222504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67593,6 +70183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1715135294}
   - component: {fileID: 1715135295}
+  - component: {fileID: 1715135296}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -67677,6 +70268,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1715135296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715135293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1716905813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67966,6 +70580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723399346}
   - component: {fileID: 1723399347}
+  - component: {fileID: 1723399348}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -68050,6 +70665,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1723399348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723399345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1725569324 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -68325,6 +70963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1731281039}
   - component: {fileID: 1731281040}
+  - component: {fileID: 1731281041}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -68409,6 +71048,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1731281041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731281038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1737262207 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -69466,6 +72128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761221909}
   - component: {fileID: 1761221910}
+  - component: {fileID: 1761221911}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -69550,6 +72213,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1761221911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761221908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1763915610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -71549,6 +74235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1802404013}
   - component: {fileID: 1802404014}
+  - component: {fileID: 1802404015}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -71633,6 +74320,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1802404015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802404012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1804663902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -71675,6 +74385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1805994448}
   - component: {fileID: 1805994449}
+  - component: {fileID: 1805994450}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -71759,6 +74470,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1805994450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805994447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1805997090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71869,6 +74603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1808443599}
   - component: {fileID: 1808443600}
+  - component: {fileID: 1808443601}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -71953,6 +74688,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1808443601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808443598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1808690742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -74513,6 +77271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1861009557}
   - component: {fileID: 1861009558}
+  - component: {fileID: 1861009559}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -74597,6 +77356,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1861009559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861009556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1861986435
 GameObject:
   m_ObjectHideFlags: 0
@@ -74607,6 +77389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1861986436}
   - component: {fileID: 1861986437}
+  - component: {fileID: 1861986438}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -74691,6 +77474,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1861986438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861986435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!4 &1863494106 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -1070350730909333850, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
+  m_PrefabInstance: {fileID: 1646698979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1865394921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -75745,6 +78556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1887732363}
   - component: {fileID: 1887732364}
+  - component: {fileID: 1887732365}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -75829,6 +78641,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1887732365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887732362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1889574740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76633,6 +79468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1916494484}
   - component: {fileID: 1916494485}
+  - component: {fileID: 1916494486}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -76717,6 +79553,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1916494486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916494483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1917488317
 GameObject:
   m_ObjectHideFlags: 0
@@ -77545,6 +80404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1942508298}
   - component: {fileID: 1942508299}
+  - component: {fileID: 1942508300}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -77629,6 +80489,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1942508300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942508297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1942544596 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -77864,6 +80747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1946641757}
   - component: {fileID: 1946641758}
+  - component: {fileID: 1946641759}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -77948,6 +80832,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1946641759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946641756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1947678377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -78712,6 +81619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1958376919}
   - component: {fileID: 1958376920}
+  - component: {fileID: 1958376921}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -78796,6 +81704,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1958376921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958376918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1959971649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -81862,6 +84793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2056670408}
   - component: {fileID: 2056670409}
+  - component: {fileID: 2056670410}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -81946,6 +84878,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2056670410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056670407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &2057718314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82778,6 +85733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2078777726}
   - component: {fileID: 2078777727}
+  - component: {fileID: 2078777728}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -82862,6 +85818,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2078777728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078777725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &2078803389
 GameObject:
   m_ObjectHideFlags: 0
@@ -83572,6 +86551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2099484298}
   - component: {fileID: 2099484299}
+  - component: {fileID: 2099484300}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -83656,6 +86636,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2099484300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099484297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &2101470703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84598,6 +87601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2120102053}
   - component: {fileID: 2120102054}
+  - component: {fileID: 2120102055}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -84682,6 +87686,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2120102055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120102052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &2121578549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84791,6 +87818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2122887763}
   - component: {fileID: 2122887764}
+  - component: {fileID: 2122887765}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -84875,6 +87903,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2122887765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122887762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &2125389402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -85902,4 +88953,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 864971494}
-  - {fileID: 1076621376}
+  - {fileID: 1646698979}
