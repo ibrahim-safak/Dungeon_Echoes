@@ -25,8 +25,6 @@ public abstract class BaseCharacter : MonoBehaviour , IDamageable
             die();
         }
     }
-
-   
    
     public abstract void die();
 }

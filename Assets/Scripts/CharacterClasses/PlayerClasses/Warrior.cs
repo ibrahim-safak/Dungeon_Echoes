@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Warrior : PlayerCharacter
+public class Warrior : PlayerCharacter, IPlayer, ISpecialSkill, IUltimateSkill
 {
 
     [Header("Warrior Özellikleri")]
@@ -19,6 +19,12 @@ public class Warrior : PlayerCharacter
     [Header("referanslar")]
     [SerializeField] private LayerMask LayerMask;
     [SerializeField] private Transform CameraTransform;
+    private Animator animator;
+    [Header("Ulti Ayarlarý")]
+    [SerializeField] private float ultiDamage = 100f;
+    [SerializeField] private float ultiRadius = 10f;
+    [SerializeField] private float ultiCooldown = 10f;
+    private float lastUltiTime = -100f;
 
     //deðiþkenler 
     private float lastAttackTime=0f;
@@ -26,33 +32,23 @@ public class Warrior : PlayerCharacter
     private bool isDashing = false;
     private Rigidbody rb;
 
+    
+
     protected override void Start()
     {
         base.Start();
         rb = GetComponent<Rigidbody>();
-
+        animator = GetComponent<Animator>();
         var movement = GetComponent<PhysicalMovement>();
         if (movement != null) movement.moveSpeed = runSpeed;
     }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-                        Attack();
-        }
-        if(Input.GetMouseButtonDown(1))
-        {
-            StartCoroutine(Dash());
-        }
-    }
-
-    public override void Attack()
+    public new void Attack()
     {
         if (Time.time - lastAttackTime < attackCooldown) return;
         
             Debug.Log("hýzlý saldýrý");
-
+        animator.SetTrigger("Attack");
         RaycastHit hit;
         if (Physics.Raycast(CameraTransform.position, CameraTransform.forward, out hit, attackRange, LayerMask))
         {
@@ -64,6 +60,12 @@ public class Warrior : PlayerCharacter
             }
         }
     }
+    public void SpecialAbility()
+    {
+        StartCoroutine(Dash());
+
+    }
+
 
     private IEnumerator Dash()
     {
@@ -76,6 +78,8 @@ public class Warrior : PlayerCharacter
         dashDir.y = 0;
         dashDir.Normalize();
 
+        animator.SetTrigger("Dash");
+
         rb.AddForce(dashDir * dashForce, ForceMode.VelocityChange);
 
         yield return new WaitForSeconds(dashDuration);
@@ -83,10 +87,34 @@ public class Warrior : PlayerCharacter
         rb.velocity = Vector3.zero;
         isDashing = false;
     }
+
+   
+    
     public override float Health => throw new System.NotImplementedException();
 
     public override void die()
     {
         throw new System.NotImplementedException();
+    }
+
+    public void UltimateAbility()
+    {
+        if (Time.time - lastUltiTime < ultiCooldown) return;
+
+        lastUltiTime = Time.time;
+        Debug.Log("Ulti Kullanýldý: Yere Vurma!");
+
+        animator.SetTrigger("Ultim"); 
+
+        // Alan hasarý kontrolü
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, ultiRadius, LayerMask);
+        foreach (var hitCollider in hitColliders)
+        {
+            IDamageable damageable = hitCollider.GetComponent<IDamageable>();
+            if (damageable != null)
+            {
+                damageable.TakeDamage(ultiDamage);
+            }
+        }
     }
 }

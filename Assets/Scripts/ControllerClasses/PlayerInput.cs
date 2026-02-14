@@ -10,6 +10,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Awake()
     {
+        IPlayer player = GetComponent<IPlayer>();
         physicalMovement = GetComponent<PhysicalMovement>();
         cameraController = GetComponent<CameraController>();
     }
@@ -32,6 +33,26 @@ public class PlayerInput : MonoBehaviour
         {
             physicalMovement.Jump();
         }
+       
+
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (this is ISpecialSkill special)
+            {
+                special.SpecialAbility();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (this is IUltimateSkill ultimate)
+            {
+                ultimate.UltimateAbility();
+            }
+        }
+
+
     }
 }
 
