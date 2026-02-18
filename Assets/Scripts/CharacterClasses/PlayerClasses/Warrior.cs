@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Warrior : PlayerCharacter, IPlayer, ISpecialSkill, IUltimateSkill
+public class Warrior : PlayerCharacter,  ISpecialSkill, IUltimateSkill
 {
 
     [Header("Warrior Özellikleri")]
@@ -43,23 +43,7 @@ public class Warrior : PlayerCharacter, IPlayer, ISpecialSkill, IUltimateSkill
         if (movement != null) movement.moveSpeed = runSpeed;
     }
 
-    public new void Attack()
-    {
-        if (Time.time - lastAttackTime < attackCooldown) return;
-        
-            Debug.Log("hýzlý saldýrý");
-        animator.SetTrigger("Attack");
-        RaycastHit hit;
-        if (Physics.Raycast(CameraTransform.position, CameraTransform.forward, out hit, attackRange, LayerMask))
-        {
-            IDamageable damageable = hit.collider.GetComponent<IDamageable>();
-            if (damageable != null)
-            {
-                damageable.TakeDamage(Damage);
-                Debug.Log("Düþmana " + Damage + " hasar verildi.");
-            }
-        }
-    }
+   
     public void SpecialAbility()
     {
         StartCoroutine(Dash());
@@ -104,7 +88,7 @@ public class Warrior : PlayerCharacter, IPlayer, ISpecialSkill, IUltimateSkill
         lastUltiTime = Time.time;
         Debug.Log("Ulti Kullanýldý: Yere Vurma!");
 
-        animator.SetTrigger("Ultim"); 
+        animator.SetTrigger("Ultimate"); 
 
         // Alan hasarý kontrolü
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, ultiRadius, LayerMask);
@@ -117,4 +101,24 @@ public class Warrior : PlayerCharacter, IPlayer, ISpecialSkill, IUltimateSkill
             }
         }
     }
+
+    public override void Attack()
+    {
+        if (Time.time - lastAttackTime < attackCooldown) return;
+
+        Debug.Log("hýzlý saldýrý");
+        animator.SetTrigger("Attack");
+        RaycastHit hit;
+        if (Physics.Raycast(CameraTransform.position, CameraTransform.forward, out hit, attackRange, LayerMask))
+        {
+            IDamageable damageable = hit.collider.GetComponent<IDamageable>();
+            if (damageable != null)
+            {
+                damageable.TakeDamage(Damage);
+                Debug.Log("Düþmana " + Damage + " hasar verildi.");
+            }
+        }
+    }
+
+    
 }

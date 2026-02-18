@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicalMovement : MonoBehaviour
 {
-    [Header("Fizik Ayarlar�")]
+    private Animator animator;
+    [Header("Fizik Ayarları")]
     [SerializeField] public float moveSpeed = 6f;
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private LayerMask groundLayer; 
@@ -18,23 +19,38 @@ public class PhysicalMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        rb.interpolation = RigidbodyInterpolation.Interpolate;
         
-        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        animator = GetComponent<Animator>();
+
+       
     }
 
     private void FixedUpdate()
     {
         CheckGround();
+        MoveCharacter();
     }
 
-    public void MoveCharacter(Vector3 direction)
+    
+    public void MoveCharacter()
     {
-        Vector3 targetVelocity = direction * moveSpeed;
+        if(Input.GetKey(KeyCode.W))
+        {
+            rb.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime);
+        }
+        if(Input.GetKey(KeyCode.S))
+        {
+            rb.MovePosition(transform.position - transform.forward * moveSpeed * Time.deltaTime);
+        }
+        if(Input.GetKey(KeyCode.A))
+        {
+            rb.MovePosition(transform.position - transform.right * moveSpeed * Time.deltaTime);
+        }
+        if(Input.GetKey(KeyCode.D))
+        {
+            rb.MovePosition(transform.position + transform.right * moveSpeed * Time.deltaTime);
+        }
 
-        targetVelocity.y = rb.velocity.y;
-
-        rb.velocity = targetVelocity;
     }
 
     public void Jump()

@@ -16,6 +16,10 @@ public abstract class PlayerCharacter : BaseCharacter
         Debug.Log("OYUNCU ÖLDÜ! Game Over.");
         // Buraya oyun bitiþ ekraný kodu gelecek.
     }
+    public override void Attack()
+    {
+        // Temel saldýrý mekanizmasý burada tanýmlanabilir.
+        // Her karakter sýnýfý bunu kendi özel saldýrýsýyla override edebilir.
+    }
 
-    
 }

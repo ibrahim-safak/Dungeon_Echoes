@@ -210,7 +210,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4738114}
   - component: {fileID: 4738115}
-  - component: {fileID: 4738116}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -295,18 +294,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &4738116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4738113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4867311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -472,7 +459,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8304059}
   - component: {fileID: 8304060}
-  - component: {fileID: 8304061}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -557,18 +543,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &8304061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8304058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8603777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2690,7 +2664,6 @@ GameObject:
   m_Component:
   - component: {fileID: 73498695}
   - component: {fileID: 73498696}
-  - component: {fileID: 73498697}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -2775,18 +2748,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &73498697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73498694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &74230282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -3271,21 +3232,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &81643353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81643349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feee981562256b04c9c8d8397a0fcd61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  health: 0
 --- !u!114 &81643354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3298,6 +3244,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ba71a7a390e9b478423251d280f258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Walk: 0
+  WalkingBackward: 0
+  WalkLeft: 0
+  WalkRight: 0
 --- !u!114 &81643355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3329,7 +3279,7 @@ MonoBehaviour:
   Damage: 20
   attackCooldown: 0.35
   runSpeed: 5
-  dashForce: 200
+  dashForce: 15
   dashDuration: 0.5
   dashCooldown: 2
   LayerMask:
@@ -3457,7 +3407,6 @@ GameObject:
   m_Component:
   - component: {fileID: 86128047}
   - component: {fileID: 86128048}
-  - component: {fileID: 86128049}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -3542,18 +3491,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &86128049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86128046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &86864046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -5069,7 +5006,6 @@ GameObject:
   m_Component:
   - component: {fileID: 134749967}
   - component: {fileID: 134749968}
-  - component: {fileID: 134749969}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -5154,18 +5090,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &134749969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134749966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &139888499 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -5181,7 +5105,6 @@ GameObject:
   m_Component:
   - component: {fileID: 140168153}
   - component: {fileID: 140168154}
-  - component: {fileID: 140168155}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -5266,18 +5189,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &140168155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140168152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &141336289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6582,7 +6493,6 @@ GameObject:
   m_Component:
   - component: {fileID: 185871721}
   - component: {fileID: 185871722}
-  - component: {fileID: 185871723}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -6667,18 +6577,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &185871723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185871720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &188235454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7596,7 +7494,6 @@ GameObject:
   m_Component:
   - component: {fileID: 206452243}
   - component: {fileID: 206452244}
-  - component: {fileID: 206452245}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -7681,18 +7578,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &206452245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206452242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &206668459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7913,7 +7798,6 @@ GameObject:
   m_Component:
   - component: {fileID: 213889060}
   - component: {fileID: 213889061}
-  - component: {fileID: 213889062}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -7998,18 +7882,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &213889062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213889059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &217049219
 GameObject:
   m_ObjectHideFlags: 0
@@ -8020,7 +7892,6 @@ GameObject:
   m_Component:
   - component: {fileID: 217049220}
   - component: {fileID: 217049221}
-  - component: {fileID: 217049222}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -8105,18 +7976,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &217049222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217049219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &218159371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9936,7 +9795,6 @@ GameObject:
   m_Component:
   - component: {fileID: 259519648}
   - component: {fileID: 259519649}
-  - component: {fileID: 259519650}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -10021,18 +9879,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &259519650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259519647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &263351632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -10681,7 +10527,6 @@ GameObject:
   m_Component:
   - component: {fileID: 277154391}
   - component: {fileID: 277154392}
-  - component: {fileID: 277154393}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -10766,18 +10611,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &277154393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277154390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &277991946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12528,7 +12361,6 @@ GameObject:
   m_Component:
   - component: {fileID: 350707652}
   - component: {fileID: 350707653}
-  - component: {fileID: 350707654}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -12613,18 +12445,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &350707654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350707651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &351353724 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -13125,7 +12945,6 @@ GameObject:
   m_Component:
   - component: {fileID: 367413472}
   - component: {fileID: 367413473}
-  - component: {fileID: 367413474}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -13210,18 +13029,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &367413474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 367413471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &370702616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -15877,7 +15684,6 @@ GameObject:
   m_Component:
   - component: {fileID: 455192865}
   - component: {fileID: 455192866}
-  - component: {fileID: 455192867}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -15962,18 +15768,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &455192867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455192864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &457599712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -16374,7 +16168,6 @@ GameObject:
   m_Component:
   - component: {fileID: 464319507}
   - component: {fileID: 464319508}
-  - component: {fileID: 464319509}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -16459,18 +16252,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &464319509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464319506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &464434488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16712,7 +16493,6 @@ GameObject:
   m_Component:
   - component: {fileID: 467992157}
   - component: {fileID: 467992158}
-  - component: {fileID: 467992159}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -16797,18 +16577,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &467992159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467992156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &469442584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -17102,7 +16870,6 @@ GameObject:
   m_Component:
   - component: {fileID: 481666230}
   - component: {fileID: 481666231}
-  - component: {fileID: 481666232}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -17187,18 +16954,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &481666232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481666229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &483031316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -17647,7 +17402,6 @@ GameObject:
   m_Component:
   - component: {fileID: 493876886}
   - component: {fileID: 493876887}
-  - component: {fileID: 493876888}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -17732,18 +17486,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &493876888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493876885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &494147371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18105,7 +17847,6 @@ GameObject:
   m_Component:
   - component: {fileID: 514687239}
   - component: {fileID: 514687240}
-  - component: {fileID: 514687241}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -18190,18 +17931,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &514687241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514687238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &515268641 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -20386,7 +20115,6 @@ GameObject:
   m_Component:
   - component: {fileID: 571997019}
   - component: {fileID: 571997020}
-  - component: {fileID: 571997021}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -20471,18 +20199,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &571997021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571997018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &572553365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20746,7 +20462,6 @@ GameObject:
   m_Component:
   - component: {fileID: 577386255}
   - component: {fileID: 577386256}
-  - component: {fileID: 577386257}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -20831,18 +20546,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &577386257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 577386254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &579599612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21233,7 +20936,6 @@ GameObject:
   m_Component:
   - component: {fileID: 586554789}
   - component: {fileID: 586554790}
-  - component: {fileID: 586554791}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -21318,18 +21020,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &586554791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586554788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &589554645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22109,7 +21799,6 @@ GameObject:
   m_Component:
   - component: {fileID: 613175357}
   - component: {fileID: 613175358}
-  - component: {fileID: 613175359}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -22194,18 +21883,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &613175359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613175356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &614059744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22335,7 +22012,6 @@ GameObject:
   m_Component:
   - component: {fileID: 615774835}
   - component: {fileID: 615774836}
-  - component: {fileID: 615774837}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -22420,18 +22096,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &615774837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615774834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &617517055 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -22831,7 +22495,6 @@ GameObject:
   m_Component:
   - component: {fileID: 627235475}
   - component: {fileID: 627235476}
-  - component: {fileID: 627235477}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -22916,18 +22579,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &627235477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627235474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &628014810
 GameObject:
   m_ObjectHideFlags: 0
@@ -22938,7 +22589,6 @@ GameObject:
   m_Component:
   - component: {fileID: 628014811}
   - component: {fileID: 628014812}
-  - component: {fileID: 628014813}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -23023,18 +22673,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &628014813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628014810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &628098251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24067,7 +23705,6 @@ GameObject:
   m_Component:
   - component: {fileID: 661270173}
   - component: {fileID: 661270174}
-  - component: {fileID: 661270175}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -24152,18 +23789,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &661270175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661270172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &661699851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -24257,7 +23882,6 @@ GameObject:
   m_Component:
   - component: {fileID: 670096589}
   - component: {fileID: 670096590}
-  - component: {fileID: 670096591}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -24342,18 +23966,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &670096591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670096588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &671709782 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -24602,7 +24214,6 @@ GameObject:
   m_Component:
   - component: {fileID: 674159229}
   - component: {fileID: 674159230}
-  - component: {fileID: 674159231}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -24687,18 +24298,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &674159231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674159228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &676067183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25188,7 +24787,6 @@ GameObject:
   m_Component:
   - component: {fileID: 689357430}
   - component: {fileID: 689357431}
-  - component: {fileID: 689357432}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -25273,18 +24871,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &689357432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689357429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &691286048 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -25629,7 +25215,6 @@ GameObject:
   m_Component:
   - component: {fileID: 695008207}
   - component: {fileID: 695008208}
-  - component: {fileID: 695008209}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -25714,18 +25299,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &695008209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695008206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &695889655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25846,7 +25419,6 @@ GameObject:
   m_Component:
   - component: {fileID: 700594592}
   - component: {fileID: 700594593}
-  - component: {fileID: 700594594}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -25931,18 +25503,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &700594594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700594591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &700680771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26053,7 +25613,6 @@ GameObject:
   m_Component:
   - component: {fileID: 705006205}
   - component: {fileID: 705006206}
-  - component: {fileID: 705006207}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -26138,18 +25697,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &705006207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705006204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &705469255 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -26848,7 +26395,6 @@ GameObject:
   m_Component:
   - component: {fileID: 730465136}
   - component: {fileID: 730465137}
-  - component: {fileID: 730465138}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -26933,18 +26479,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &730465138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 730465135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &732737651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27216,7 +26750,6 @@ GameObject:
   m_Component:
   - component: {fileID: 736878099}
   - component: {fileID: 736878100}
-  - component: {fileID: 736878101}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -27301,18 +26834,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &736878101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 736878098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &736880606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28332,7 +27853,6 @@ GameObject:
   m_Component:
   - component: {fileID: 752864665}
   - component: {fileID: 752864666}
-  - component: {fileID: 752864667}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -28417,18 +27937,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &752864667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752864664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &753385220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28516,7 +28024,6 @@ GameObject:
   m_Component:
   - component: {fileID: 753720662}
   - component: {fileID: 753720663}
-  - component: {fileID: 753720664}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -28601,18 +28108,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &753720664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753720661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &753780143 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -30285,7 +29780,6 @@ GameObject:
   m_Component:
   - component: {fileID: 784358200}
   - component: {fileID: 784358201}
-  - component: {fileID: 784358202}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -30370,18 +29864,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &784358202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784358199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &785055535
 GameObject:
   m_ObjectHideFlags: 0
@@ -30392,7 +29874,6 @@ GameObject:
   m_Component:
   - component: {fileID: 785055536}
   - component: {fileID: 785055537}
-  - component: {fileID: 785055538}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -30477,18 +29958,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &785055538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785055535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &787304991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31971,7 +31440,6 @@ GameObject:
   m_Component:
   - component: {fileID: 831596236}
   - component: {fileID: 831596237}
-  - component: {fileID: 831596238}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -32056,18 +31524,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &831596238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831596235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &831842907
 GameObject:
   m_ObjectHideFlags: 0
@@ -32078,7 +31534,6 @@ GameObject:
   m_Component:
   - component: {fileID: 831842908}
   - component: {fileID: 831842909}
-  - component: {fileID: 831842910}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -32163,18 +31618,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &831842910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831842907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &835390278 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -32451,7 +31894,6 @@ GameObject:
   m_Component:
   - component: {fileID: 839771555}
   - component: {fileID: 839771556}
-  - component: {fileID: 839771557}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -32536,18 +31978,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &839771557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839771554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &840969519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34274,7 +33704,6 @@ GameObject:
   m_Component:
   - component: {fileID: 890286528}
   - component: {fileID: 890286529}
-  - component: {fileID: 890286530}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -34359,18 +33788,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &890286530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890286527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &894327017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35216,7 +34633,6 @@ GameObject:
   m_Component:
   - component: {fileID: 916389734}
   - component: {fileID: 916389735}
-  - component: {fileID: 916389736}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -35301,18 +34717,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &916389736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916389733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &918691224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35941,7 +35345,6 @@ GameObject:
   m_Component:
   - component: {fileID: 929927162}
   - component: {fileID: 929927163}
-  - component: {fileID: 929927164}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -36026,18 +35429,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &929927164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929927161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &930515496 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -37048,7 +36439,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: -0.12864235, y: -0.014564592, z: 0.0018913054, w: -0.9915823}
-  m_LocalPosition: {x: 0.001750946, y: 1.7060567, z: 0.14280653}
+  m_LocalPosition: {x: 0.006, y: 1.669, z: 0.283}
   m_LocalScale: {x: 0.74758154, y: 0.8053958, z: 0.64892274}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37064,7 +36455,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963200286}
   - component: {fileID: 963200287}
-  - component: {fileID: 963200288}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -37149,18 +36539,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &963200288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963200285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &964699098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37401,7 +36779,6 @@ GameObject:
   m_Component:
   - component: {fileID: 969203811}
   - component: {fileID: 969203812}
-  - component: {fileID: 969203813}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -37486,18 +36863,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &969203813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969203810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &970011023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37607,7 +36972,6 @@ GameObject:
   m_Component:
   - component: {fileID: 973949936}
   - component: {fileID: 973949937}
-  - component: {fileID: 973949938}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -37692,18 +37056,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &973949938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973949935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &975060285 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -38298,7 +37650,6 @@ GameObject:
   m_Component:
   - component: {fileID: 988468742}
   - component: {fileID: 988468743}
-  - component: {fileID: 988468744}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -38383,18 +37734,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &988468744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988468741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &989094875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -40503,7 +39842,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1053160073}
   - component: {fileID: 1053160074}
-  - component: {fileID: 1053160075}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -40588,18 +39926,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1053160075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053160072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1054127849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -41411,7 +40737,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1075701706}
   - component: {fileID: 1075701707}
-  - component: {fileID: 1075701708}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -41496,18 +40821,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1075701708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075701705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1079997610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -41642,7 +40955,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1083803218}
   - component: {fileID: 1083803219}
-  - component: {fileID: 1083803220}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -41727,18 +41039,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1083803220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083803217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1084409365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42656,7 +41956,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1102225344}
   - component: {fileID: 1102225345}
-  - component: {fileID: 1102225346}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -42741,18 +42040,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1102225346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102225343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1103846772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43873,7 +43160,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1119184709}
   - component: {fileID: 1119184710}
-  - component: {fileID: 1119184711}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -43958,18 +43244,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1119184711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119184708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1120302794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44666,7 +43940,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1127439253}
   - component: {fileID: 1127439254}
-  - component: {fileID: 1127439255}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -44751,18 +44024,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1127439255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127439252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1133428420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45822,7 +45083,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1154171312}
   - component: {fileID: 1154171313}
-  - component: {fileID: 1154171314}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -45907,18 +45167,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1154171314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154171311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1154699063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46116,7 +45364,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1156188805}
   - component: {fileID: 1156188806}
-  - component: {fileID: 1156188807}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -46201,18 +45448,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1156188807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156188804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1159438022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -48621,7 +47856,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1216377829}
   - component: {fileID: 1216377830}
-  - component: {fileID: 1216377831}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -48706,18 +47940,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1216377831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216377828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1217246376
 GameObject:
   m_ObjectHideFlags: 0
@@ -48728,7 +47950,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1217246377}
   - component: {fileID: 1217246378}
-  - component: {fileID: 1217246379}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -48813,18 +48034,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1217246379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217246376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1219570241 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -49150,7 +48359,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1225993452}
   - component: {fileID: 1225993453}
-  - component: {fileID: 1225993454}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -49235,18 +48443,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1225993454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225993451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1226362519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49732,7 +48928,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1240108615}
   - component: {fileID: 1240108616}
-  - component: {fileID: 1240108617}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -49817,18 +49012,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1240108617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240108614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1242138222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52044,7 +51227,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1289558593}
   - component: {fileID: 1289558594}
-  - component: {fileID: 1289558595}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -52129,18 +51311,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1289558595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289558592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1292030296 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -53895,7 +53065,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1338334136}
   - component: {fileID: 1338334137}
-  - component: {fileID: 1338334138}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -53980,18 +53149,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1338334138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338334135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1343355623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54404,7 +53561,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1350277364}
   - component: {fileID: 1350277365}
-  - component: {fileID: 1350277366}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -54489,18 +53645,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1350277366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350277363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1351479850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57663,7 +56807,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1419121535}
   - component: {fileID: 1419121536}
-  - component: {fileID: 1419121537}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -57748,18 +56891,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1419121537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419121534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1423472273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -60117,7 +59248,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1498046628}
   - component: {fileID: 1498046629}
-  - component: {fileID: 1498046630}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -60202,18 +59332,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1498046630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498046627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1500684173 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -61080,7 +60198,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1535364151}
   - component: {fileID: 1535364152}
-  - component: {fileID: 1535364153}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -61165,18 +60282,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1535364153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535364150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1535486524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61264,7 +60369,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1535928538}
   - component: {fileID: 1535928539}
-  - component: {fileID: 1535928540}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -61349,18 +60453,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1535928540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535928537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1536067504
 GameObject:
   m_ObjectHideFlags: 0
@@ -61418,7 +60510,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1539278134}
   - component: {fileID: 1539278135}
-  - component: {fileID: 1539278136}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -61503,18 +60594,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1539278136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539278133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1542612500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61854,7 +60933,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1547600386}
   - component: {fileID: 1547600387}
-  - component: {fileID: 1547600388}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -61939,18 +61017,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1547600388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547600385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1548198003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -62237,7 +61303,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1554969761}
   - component: {fileID: 1554969762}
-  - component: {fileID: 1554969763}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -62322,18 +61387,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1554969763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554969760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1555251062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62443,7 +61496,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1559073616}
   - component: {fileID: 1559073617}
-  - component: {fileID: 1559073618}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -62528,18 +61580,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1559073618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559073615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1560201119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -63598,7 +62638,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1590042412}
   - component: {fileID: 1590042413}
-  - component: {fileID: 1590042414}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -63683,18 +62722,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1590042414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590042411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1590205096 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -64700,7 +63727,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1619555019}
   - component: {fileID: 1619555020}
-  - component: {fileID: 1619555021}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -64785,18 +63811,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1619555021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619555018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1620582214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65011,7 +64025,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1626036463}
   - component: {fileID: 1626036464}
-  - component: {fileID: 1626036465}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -65096,18 +64109,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1626036465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1626036462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1629026631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
@@ -65687,15 +64688,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8021001004253913084, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 6.8554983
+      value: 5.689587
       objectReference: {fileID: 0}
     - target: {fileID: -8021001004253913084, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 1.3328638
+      value: 0.5857956
       objectReference: {fileID: 0}
     - target: {fileID: -8021001004253913084, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 2.8732777
+      value: 2.468799
       objectReference: {fileID: 0}
     - target: {fileID: -7219772299731422950, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -65711,15 +64712,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6874584590210671055, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 50.347107
+      value: 49.42595
       objectReference: {fileID: 0}
     - target: {fileID: -6874584590210671055, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 36.427433
+      value: 36.688503
       objectReference: {fileID: 0}
     - target: {fileID: -6874584590210671055, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 22.365158
+      value: 21.468761
       objectReference: {fileID: 0}
     - target: {fileID: -6857788192064577062, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -65735,15 +64736,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6803169544883306252, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 79.30181
+      value: 78.858116
       objectReference: {fileID: 0}
     - target: {fileID: -6803169544883306252, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 98.06132
+      value: 97.99489
       objectReference: {fileID: 0}
     - target: {fileID: -6803169544883306252, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -176.1205
+      value: -176.22603
       objectReference: {fileID: 0}
     - target: {fileID: -6768225281626788248, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -65795,51 +64796,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3746190272939815206, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -67.17011
+      value: -61.922615
       objectReference: {fileID: 0}
     - target: {fileID: -3746190272939815206, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -5.6286807
+      value: -5.5816493
       objectReference: {fileID: 0}
     - target: {fileID: -3746190272939815206, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 6.616598
+      value: 6.5029755
       objectReference: {fileID: 0}
     - target: {fileID: -3480699329000672020, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.37053227
+      value: -0.8350824
       objectReference: {fileID: 0}
     - target: {fileID: -3480699329000672020, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.8238871
+      value: 0.4852069
       objectReference: {fileID: 0}
     - target: {fileID: -3480699329000672020, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.44480607
+      value: -0.53822064
       objectReference: {fileID: 0}
     - target: {fileID: -3432401550182100168, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 28.74416
+      value: 29.205912
       objectReference: {fileID: 0}
     - target: {fileID: -3432401550182100168, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -22.574032
+      value: -20.749607
       objectReference: {fileID: 0}
     - target: {fileID: -3432401550182100168, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -21.628532
+      value: -19.47152
       objectReference: {fileID: 0}
     - target: {fileID: -3321919801592875672, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -19.033094
+      value: -17.868626
       objectReference: {fileID: 0}
     - target: {fileID: -3321919801592875672, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -39.943184
+      value: -39.168594
       objectReference: {fileID: 0}
     - target: {fileID: -3321919801592875672, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 8.66131
+      value: 8.164038
       objectReference: {fileID: 0}
     - target: {fileID: -2899422035419094908, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -65855,15 +64856,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2770666803903516498, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 40.79881
+      value: 40.815353
       objectReference: {fileID: 0}
     - target: {fileID: -2770666803903516498, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 9.852257
+      value: 9.866018
       objectReference: {fileID: 0}
     - target: {fileID: -2770666803903516498, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.80193317
+      value: 0.8139472
       objectReference: {fileID: 0}
     - target: {fileID: -2594260964506120097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -65891,15 +64892,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2072040086291044643, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -56.400913
+      value: -52.932064
       objectReference: {fileID: 0}
     - target: {fileID: -2072040086291044643, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 20.192303
+      value: 18.494072
       objectReference: {fileID: 0}
     - target: {fileID: -2072040086291044643, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -18.482536
+      value: -16.54635
       objectReference: {fileID: 0}
     - target: {fileID: -1864740628597940677, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -65915,15 +64916,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1812909498023395591, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 3.3529744
+      value: 3.3022585
       objectReference: {fileID: 0}
     - target: {fileID: -1812909498023395591, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.30465767
+      value: 0.343109
       objectReference: {fileID: 0}
     - target: {fileID: -1812909498023395591, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -36.431683
+      value: -35.78444
       objectReference: {fileID: 0}
     - target: {fileID: -1070350730909333850, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -65963,27 +64964,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 366175167995203695, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 6.867431
+      value: 5.694533
       objectReference: {fileID: 0}
     - target: {fileID: 366175167995203695, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 1.2769068
+      value: 0.54336363
       objectReference: {fileID: 0}
     - target: {fileID: 366175167995203695, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 2.866879
+      value: 2.4642656
       objectReference: {fileID: 0}
     - target: {fileID: 608321761475470972, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 82.63815
+      value: 79.94542
       objectReference: {fileID: 0}
     - target: {fileID: 608321761475470972, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -38.420742
+      value: -24.97378
       objectReference: {fileID: 0}
     - target: {fileID: 608321761475470972, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -28.189636
+      value: -14.567115
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_Name
@@ -66039,51 +65040,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1852576806548013000, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -12.331023
+      value: -13.01756
       objectReference: {fileID: 0}
     - target: {fileID: 1852576806548013000, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 31.202503
+      value: 29.251236
       objectReference: {fileID: 0}
     - target: {fileID: 1852576806548013000, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -19.04749
+      value: -20.304571
       objectReference: {fileID: 0}
     - target: {fileID: 2559285840627121667, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -32.29687
+      value: -31.665836
       objectReference: {fileID: 0}
     - target: {fileID: 2559285840627121667, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -7.6694717
+      value: -8.886976
       objectReference: {fileID: 0}
     - target: {fileID: 2559285840627121667, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 157.8404
+      value: 158.85007
       objectReference: {fileID: 0}
     - target: {fileID: 2563496969622287784, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 5.246765
+      value: 5.521656
       objectReference: {fileID: 0}
     - target: {fileID: 2563496969622287784, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 1.9536183
+      value: 2.726848
       objectReference: {fileID: 0}
     - target: {fileID: 2563496969622287784, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 67.17878
+      value: 75.462814
       objectReference: {fileID: 0}
     - target: {fileID: 2916570863362053800, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 36.785416
+      value: 36.698467
       objectReference: {fileID: 0}
     - target: {fileID: 2916570863362053800, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -9.7663145
+      value: -9.736063
       objectReference: {fileID: 0}
     - target: {fileID: 2916570863362053800, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.0662732
+      value: -0.047560997
       objectReference: {fileID: 0}
     - target: {fileID: 3183749884578473501, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -66159,27 +65160,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5465940246521907071, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -6.096278
+      value: -4.2801876
       objectReference: {fileID: 0}
     - target: {fileID: 5465940246521907071, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 58.124016
+      value: 59.613647
       objectReference: {fileID: 0}
     - target: {fileID: 5465940246521907071, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.3027858
+      value: -0.7280755
       objectReference: {fileID: 0}
     - target: {fileID: 6000407479487422213, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 18.788464
+      value: 17.750822
       objectReference: {fileID: 0}
     - target: {fileID: 6000407479487422213, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 43.851757
+      value: 42.086296
       objectReference: {fileID: 0}
     - target: {fileID: 6000407479487422213, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 34.67457
+      value: 36.229763
       objectReference: {fileID: 0}
     - target: {fileID: 6341119541397085964, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -66195,27 +65196,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6502182839619065283, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -30.982374
+      value: -31.73251
       objectReference: {fileID: 0}
     - target: {fileID: 6502182839619065283, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -20.590275
+      value: -21.135408
       objectReference: {fileID: 0}
     - target: {fileID: 6502182839619065283, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.091263
+      value: 7.339049
       objectReference: {fileID: 0}
     - target: {fileID: 6515712193588681746, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 16.684298
+      value: 16.78879
       objectReference: {fileID: 0}
     - target: {fileID: 6515712193588681746, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -7.4937134
+      value: -7.3600087
       objectReference: {fileID: 0}
     - target: {fileID: 6515712193588681746, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.5240651
+      value: -1.333641
       objectReference: {fileID: 0}
     - target: {fileID: 6655383506977046455, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -66231,15 +65232,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078722787440015773, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 70.77291
+      value: 71.17162
       objectReference: {fileID: 0}
     - target: {fileID: 7078722787440015773, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -98.157104
+      value: -97.78392
       objectReference: {fileID: 0}
     - target: {fileID: 7078722787440015773, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 177.69266
+      value: 177.7752
       objectReference: {fileID: 0}
     - target: {fileID: 7666680083751660616, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -66255,15 +65256,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8169382868667117632, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -25.835577
+      value: -25.536232
       objectReference: {fileID: 0}
     - target: {fileID: 8169382868667117632, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 1.0448318
+      value: 0.7872992
       objectReference: {fileID: 0}
     - target: {fileID: 8169382868667117632, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -161.78418
+      value: -163.13269
       objectReference: {fileID: 0}
     - target: {fileID: 8255111157037086696, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -66308,9 +65309,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 81643354}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 81643353}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 81643352}
@@ -69103,7 +68101,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1711215500}
   - component: {fileID: 1711215501}
-  - component: {fileID: 1711215502}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -69188,18 +68185,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1711215502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711215499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1711222504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69341,7 +68326,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1715135294}
   - component: {fileID: 1715135295}
-  - component: {fileID: 1715135296}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -69426,18 +68410,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1715135296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715135293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1716905813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69727,7 +68699,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1723399346}
   - component: {fileID: 1723399347}
-  - component: {fileID: 1723399348}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -69812,18 +68783,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1723399348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723399345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1725569324 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -70099,7 +69058,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1731281039}
   - component: {fileID: 1731281040}
-  - component: {fileID: 1731281041}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -70184,18 +69142,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1731281041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731281038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1737262207 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -71253,7 +70199,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1761221909}
   - component: {fileID: 1761221910}
-  - component: {fileID: 1761221911}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -71338,18 +70283,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1761221911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761221908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1763915610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -73349,7 +72282,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1802404013}
   - component: {fileID: 1802404014}
-  - component: {fileID: 1802404015}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -73434,18 +72366,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1802404015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802404012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1804663902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -73488,7 +72408,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1805994448}
   - component: {fileID: 1805994449}
-  - component: {fileID: 1805994450}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -73573,18 +72492,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1805994450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805994447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1805997090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73695,7 +72602,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1808443599}
   - component: {fileID: 1808443600}
-  - component: {fileID: 1808443601}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -73780,18 +72686,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1808443601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808443598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1808690742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -76352,7 +75246,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1861009557}
   - component: {fileID: 1861009558}
-  - component: {fileID: 1861009559}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -76437,18 +75330,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1861009559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861009556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1861986435
 GameObject:
   m_ObjectHideFlags: 0
@@ -76459,7 +75340,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1861986436}
   - component: {fileID: 1861986437}
-  - component: {fileID: 1861986438}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -76544,18 +75424,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1861986438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861986435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1863494106 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1070350730909333850, guid: bcd346e672149bf4bba4d1371c5d73aa, type: 3}
@@ -77615,7 +76483,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1887732363}
   - component: {fileID: 1887732364}
-  - component: {fileID: 1887732365}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -77700,18 +76567,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1887732365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887732362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1889574740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78516,7 +77371,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1916494484}
   - component: {fileID: 1916494485}
-  - component: {fileID: 1916494486}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -78601,18 +77455,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1916494486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916494483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1917488317
 GameObject:
   m_ObjectHideFlags: 0
@@ -79441,7 +78283,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1942508298}
   - component: {fileID: 1942508299}
-  - component: {fileID: 1942508300}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -79526,18 +78367,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1942508300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942508297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1942544596 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -79773,7 +78602,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1946641757}
   - component: {fileID: 1946641758}
-  - component: {fileID: 1946641759}
   m_Layer: 0
   m_Name: Side Lamp (2)
   m_TagString: Untagged
@@ -79858,18 +78686,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1946641759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946641756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1947678377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100508158649072905, guid: e348e7143b6247b488737e4be26fb038, type: 3}
@@ -80634,7 +79450,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1958376919}
   - component: {fileID: 1958376920}
-  - component: {fileID: 1958376921}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -80719,18 +79534,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1958376921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958376918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1959971649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 16038835297913163, guid: 7c7baabdbc078cb4098d5880fc72c0f3, type: 3}
@@ -83797,7 +82600,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2056670408}
   - component: {fileID: 2056670409}
-  - component: {fileID: 2056670410}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -83882,18 +82684,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &2056670410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056670407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2057718314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84726,7 +83516,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2078777726}
   - component: {fileID: 2078777727}
-  - component: {fileID: 2078777728}
   m_Layer: 0
   m_Name: Side Lamp (1)
   m_TagString: Untagged
@@ -84811,18 +83600,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &2078777728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078777725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2078803389
 GameObject:
   m_ObjectHideFlags: 0
@@ -85533,7 +84310,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2099484298}
   - component: {fileID: 2099484299}
-  - component: {fileID: 2099484300}
   m_Layer: 0
   m_Name: Side Lamp
   m_TagString: Untagged
@@ -85618,18 +84394,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &2099484300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099484297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2101470703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86572,7 +85336,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2120102053}
   - component: {fileID: 2120102054}
-  - component: {fileID: 2120102055}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -86657,18 +85420,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &2120102055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120102052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2121578549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86778,7 +85529,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2122887763}
   - component: {fileID: 2122887764}
-  - component: {fileID: 2122887765}
   m_Layer: 0
   m_Name: Side Lamp (3)
   m_TagString: Untagged
@@ -86863,18 +85613,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &2122887765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2122887762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2125389402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6229247520373792897, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}

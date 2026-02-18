@@ -1,57 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerInput : MonoBehaviour
 {
-
+    private Animator animator;
     private PhysicalMovement physicalMovement;
     private CameraController cameraController;
+    private Warrior warrior;
+
+    public bool Walk = false;
+    public bool WalkingBackward = false;
+    public bool WalkLeft = false;
+    public bool WalkRight = false;
 
     private void Awake()
     {
-        IPlayer player = GetComponent<IPlayer>();
+        animator = GetComponent<Animator>();
         physicalMovement = GetComponent<PhysicalMovement>();
         cameraController = GetComponent<CameraController>();
+            warrior = GetComponent<Warrior>();
     }
 
     private void Update()
     {
-        float x = Input.GetAxis("Horizontal"); 
-        float z = Input.GetAxis("Vertical");
+        Walk = Input.GetKey(KeyCode.W);
+        WalkingBackward = Input.GetKey(KeyCode.S);
+        WalkLeft = Input.GetKey(KeyCode.A);
+        WalkRight = Input.GetKey(KeyCode.D);
 
-        Vector3 moveDirection = (transform.right * x + transform.forward * z).normalized;
-
-        physicalMovement.MoveCharacter(moveDirection);
+        // Null-safe animator çaðrýlarý
+        animator?.SetBool("Walk", Walk);
+        animator?.SetBool("WalkingBackward", WalkingBackward);
+        animator?.SetBool("WalkLeft", WalkLeft);
+        animator?.SetBool("WalkRight", WalkRight);
 
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
         cameraController.RotateCamera(new Vector2(mouseX, mouseY));
 
-        
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            physicalMovement.Jump();
-        }
-       
 
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            if (this is ISpecialSkill special)
+        if(warrior !=null ) { 
+            if (Input.GetMouseButtonDown(0))
             {
-                special.SpecialAbility();
+                warrior.Attack();
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                warrior.SpecialAbility();
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                warrior.UltimateAbility();
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            if (this is IUltimateSkill ultimate)
-            {
-                ultimate.UltimateAbility();
-            }
-        }
-
 
     }
 }
