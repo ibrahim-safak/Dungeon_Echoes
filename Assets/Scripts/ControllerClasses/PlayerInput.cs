@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     private PhysicalMovement physicalMovement;
     private CameraController cameraController;
     private Warrior warrior;
+    private Archer archer;
 
     public bool Walk = false;
     public bool WalkingBackward = false;
@@ -21,6 +22,8 @@ public class PlayerInput : MonoBehaviour
         physicalMovement = GetComponent<PhysicalMovement>();
         cameraController = GetComponent<CameraController>();
             warrior = GetComponent<Warrior>();
+            archer = GetComponent<Archer>();
+
     }
 
     private void Update()
@@ -55,7 +58,23 @@ public class PlayerInput : MonoBehaviour
                 warrior.UltimateAbility();
             }
         }
+        if (archer != null)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                archer.Attack();
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                archer.SpecialAbility();
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                archer.UltimateAbility();
+            }
+        }
 
-    }
+
+        }
 }
 
