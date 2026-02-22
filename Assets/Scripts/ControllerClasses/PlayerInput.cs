@@ -21,8 +21,8 @@ public class PlayerInput : MonoBehaviour
         animator = GetComponent<Animator>();
         physicalMovement = GetComponent<PhysicalMovement>();
         cameraController = GetComponent<CameraController>();
-            warrior = GetComponent<Warrior>();
-            archer = GetComponent<Archer>();
+        warrior = GetComponent<Warrior>();
+        archer = GetComponent<Archer>();
 
     }
 
@@ -44,7 +44,8 @@ public class PlayerInput : MonoBehaviour
         cameraController.RotateCamera(new Vector2(mouseX, mouseY));
 
 
-        if(warrior !=null ) { 
+        if (warrior != null)
+        {
             if (Input.GetMouseButtonDown(0))
             {
                 warrior.Attack();
@@ -60,11 +61,11 @@ public class PlayerInput : MonoBehaviour
         }
         if (archer != null)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(1))
             {
                 archer.Attack();
             }
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(0))
             {
                 archer.SpecialAbility();
             }
@@ -73,8 +74,11 @@ public class PlayerInput : MonoBehaviour
                 archer.UltimateAbility();
             }
         }
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            physicalMovement.Jump();
 
         }
+    }
 }
 

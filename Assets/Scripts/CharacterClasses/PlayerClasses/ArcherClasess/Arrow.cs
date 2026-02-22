@@ -6,30 +6,42 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Arrow : MonoBehaviour
 {
-    public float damage = 10f;
+    public float speed = 25f;
+    private float damage = 10f;
+    public float lifeTime = 5f;
     private Rigidbody rb;
-    private bool hasHit = false;
-    
+    private Animator animator;
 
-    void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
+        Destroy(gameObject, lifeTime);
     }
 
-    void Update()
+    private void Start()
     {
-        if (!hasHit && rb.velocity != Vector3.zero)
+        if (rb != null)
         {
-            transform.rotation = Quaternion.LookRotation(rb.velocity);
+            rb.velocity = transform.forward * speed;
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+    public void SetDamage(float d)
     {
-        // Bir yere çarptýðýnda durmasý için
-        hasHit = true;
-        rb.isKinematic = true; // Fizik motorunu durdurur
-        transform.SetParent(collision.transform); // Çarptýðý nesneye yapýþýr
+        damage = d;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player")) return; 
+
+        var dmg = other.GetComponent<IDamageable>();
+        if (dmg != null)
+        {
+            dmg.TakeDamage(damage);
+        }
+        Destroy(gameObject);
     }
 }
-
