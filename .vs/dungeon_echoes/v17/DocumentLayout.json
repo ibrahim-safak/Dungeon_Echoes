@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|c:\\users\\ibrah\\project\\game project\\unity project\\dungeon_echoes\\assets\\scripts\\characterclasses\\playerclasses\\archerclasess\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\playerclasses\\archerclasess\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\characterclasses\\playerclasses\\archerclasess\\archer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|c:\\users\\ibrah\\project\\game project\\unity project\\dungeon_echoes\\assets\\scripts\\characterclasses\\playerclasses\\archerclasess\\archer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\playerclasses\\archerclasess\\archer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|c:\\users\\ibrah\\project\\game project\\unity project\\dungeon_echoes\\assets\\scripts\\controllerclasses\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controllerclasses\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\characterclasses\\playerclasses\\archerclasess\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\playerclasses\\archerclasess\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\characterclasses\\basecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\basecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\characterclasses\\hostilecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,20 +39,12 @@
       "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\characterclasses\\basecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\basecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\interfaces\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interfaces\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\controllerclasses\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controllerclasses\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\controllerclasses\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\controllerclasses\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +58,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PlayerCharacter.cs",
               "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\PlayerCharacter.cs",
@@ -75,58 +71,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerInput.cs",
-              "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\ControllerClasses\\PlayerInput.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ControllerClasses\\PlayerInput.cs",
-              "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\ControllerClasses\\PlayerInput.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ControllerClasses\\PlayerInput.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "BaseCharacter.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\BaseCharacter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\BaseCharacter.cs",
+              "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\BaseCharacter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\BaseCharacter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T09:17:58.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-07T12:08:16.33Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Archer.cs",
-              "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Archer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Archer.cs",
-              "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Archer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Archer.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAywCoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T08:53:18.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Warrior.cs",
               "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\Warrior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\Warrior.cs",
               "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\Warrior.cs",
               "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\Warrior.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwCYAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAqwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-11T14:41:26.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AnimatorController.cs",
-              "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\ControllerClasses\\AnimatorController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ControllerClasses\\AnimatorController.cs",
-              "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\ControllerClasses\\AnimatorController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ControllerClasses\\AnimatorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PlayerInput.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\ControllerClasses\\PlayerInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ControllerClasses\\PlayerInput.cs",
+              "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\ControllerClasses\\PlayerInput.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ControllerClasses\\PlayerInput.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAkwE4AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T16:28:44.669Z"
+              "WhenOpened": "2026-02-22T09:17:58.586Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PhysicalMovement.cs",
               "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\ControllerClasses\\PhysicalMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ControllerClasses\\PhysicalMovement.cs",
@@ -135,18 +118,6 @@
               "ViewState": "AgIAABIAAAAAAAAAAAAxwB4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-07T12:19:14.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BaseCharacter.cs",
-              "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\BaseCharacter.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\BaseCharacter.cs",
-              "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\BaseCharacter.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\BaseCharacter.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAIBJwB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T12:08:16.33Z"
             },
             {
               "$type": "Document",
@@ -162,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ISpecialSkill.cs",
               "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\interfaces\\ISpecialSkill.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\interfaces\\ISpecialSkill.cs",
@@ -174,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "HostileCharacter.cs",
               "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\HostileCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\HostileCharacter.cs",
@@ -200,19 +171,31 @@
         },
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Arrow.cs",
               "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Arrow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Arrow.cs",
               "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Arrow.cs",
               "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Arrow.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T18:36:58.958Z",
+              "WhenOpened": "2026-02-20T18:36:58.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Archer.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Archer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Archer.cs",
+              "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Archer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\ArcherClasess\\Archer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwBYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T08:53:18.229Z",
               "EditorCaption": ""
             }
           ]

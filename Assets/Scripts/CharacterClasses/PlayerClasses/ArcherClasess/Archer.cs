@@ -11,10 +11,16 @@ public class Archer : PlayerCharacter, ISpecialSkill, IUltimateSkill
     [SerializeField] private float attackDamage = 10f;
     [SerializeField] private float ultimateAbilityDamage = 50f;
 
+
     [Header("Ok ve Atýþ Ayarlarý")]
     [SerializeField] private GameObject arrowPrefab; 
-    [SerializeField] private Transform arrowSpawnPoint; 
-   
+    [SerializeField] private Transform arrowSpawnPoint;
+
+    [Header("special ability ayarlarý")]
+    [SerializeField] private float specialAbilityCooldown = 5f;
+    [SerializeField] private float specialAbilityRadius = 5f;
+    [SerializeField] private float specialAbilityPushForce = 10f;
+    private float lastSpecialAbilityTime = 0f;
 
     protected override void Start()
     {
@@ -27,14 +33,27 @@ public class Archer : PlayerCharacter, ISpecialSkill, IUltimateSkill
   
     public override void Attack()
     {
-        animator.SetTrigger("Attack"); 
         SpawnArrow(attackDamage);
     }
 
     public void SpecialAbility()
     {
+        if(Time.time - lastSpecialAbilityTime < specialAbilityCooldown) return;
         animator.SetTrigger("Special");
-        
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, specialAbilityRadius);
+        foreach (var hitCollider in hitColliders)
+        {
+            if (hitCollider.CompareTag("Player")) continue;
+
+            // Herhangi bir Rigidbody'ye sahip olan objeleri ittir
+            Rigidbody targetRb = hitCollider.attachedRigidbody;
+            if (targetRb != null)
+            {
+                Vector3 pushDirection = (hitCollider.transform.position - transform.position).normalized;
+                targetRb.AddForce(pushDirection * specialAbilityPushForce, ForceMode.Impulse);
+            }
+
+        }
     }
 
     public void UltimateAbility()

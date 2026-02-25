@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -15,6 +14,8 @@ public class PlayerInput : MonoBehaviour
     public bool WalkingBackward = false;
     public bool WalkLeft = false;
     public bool WalkRight = false;
+
+
 
     private void Awake()
     {
@@ -61,10 +62,28 @@ public class PlayerInput : MonoBehaviour
         }
         if (archer != null)
         {
+
+
             if (Input.GetMouseButtonDown(1))
             {
+                animator.SetBool("isCharge", true);
+            }
+            if (Input.GetMouseButton(1))
+            {
+                animator.SetBool("isWait", true);
+
+            }
+
+            if (Input.GetMouseButtonUp(1))
+            {
+                animator.SetBool("isWait", false);
+                animator.SetTrigger("Attack");
+                animator.SetBool("isCharge", false);
                 archer.Attack();
             }
+
+            
+
             if (Input.GetMouseButtonDown(0))
             {
                 archer.SpecialAbility();
