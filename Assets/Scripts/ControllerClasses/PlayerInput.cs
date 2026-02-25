@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -9,18 +8,23 @@ public class PlayerInput : MonoBehaviour
     private PhysicalMovement physicalMovement;
     private CameraController cameraController;
     private Warrior warrior;
+    private Archer archer;
 
     public bool Walk = false;
     public bool WalkingBackward = false;
     public bool WalkLeft = false;
     public bool WalkRight = false;
 
+
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
         physicalMovement = GetComponent<PhysicalMovement>();
         cameraController = GetComponent<CameraController>();
-            warrior = GetComponent<Warrior>();
+        warrior = GetComponent<Warrior>();
+        archer = GetComponent<Archer>();
+
     }
 
     private void Update()
@@ -41,7 +45,8 @@ public class PlayerInput : MonoBehaviour
         cameraController.RotateCamera(new Vector2(mouseX, mouseY));
 
 
-        if(warrior !=null ) { 
+        if (warrior != null)
+        {
             if (Input.GetMouseButtonDown(0))
             {
                 warrior.Attack();
@@ -55,7 +60,44 @@ public class PlayerInput : MonoBehaviour
                 warrior.UltimateAbility();
             }
         }
+        if (archer != null)
+        {
 
+
+            if (Input.GetMouseButtonDown(1))
+            {
+                animator.SetBool("isCharge", true);
+            }
+            if (Input.GetMouseButton(1))
+            {
+                animator.SetBool("isWait", true);
+
+            }
+
+            if (Input.GetMouseButtonUp(1))
+            {
+                animator.SetBool("isWait", false);
+                animator.SetTrigger("Attack");
+                animator.SetBool("isCharge", false);
+                archer.Attack();
+            }
+
+            
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                archer.SpecialAbility();
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                archer.UltimateAbility();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            physicalMovement.Jump();
+
+        }
     }
 }
 
