@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     private CameraController cameraController;
     private Warrior warrior;
     private Archer archer;
+    private Sorcerer sorcerer;
 
     public bool Walk = false;
     public bool WalkingBackward = false;
@@ -24,6 +25,7 @@ public class PlayerInput : MonoBehaviour
         cameraController = GetComponent<CameraController>();
         warrior = GetComponent<Warrior>();
         archer = GetComponent<Archer>();
+        sorcerer = GetComponent<Sorcerer>();
 
     }
 
@@ -93,6 +95,23 @@ public class PlayerInput : MonoBehaviour
                 archer.UltimateAbility();
             }
         }
+
+        if (sorcerer != null)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                sorcerer.Attack();
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                sorcerer.SpecialAbility();
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                sorcerer.UltimateAbility();
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             physicalMovement.Jump();
