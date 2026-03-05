@@ -7,6 +7,7 @@ public class Archer : PlayerCharacter, ISpecialSkill, IUltimateSkill
     private Animator animator;
     private Rigidbody rb;
 
+
     [Header("Archer Özellikleri")]
     [SerializeField] private float attackDamage = 10f;
     [SerializeField] private float ultimateAbilityDamage = 50f;
@@ -34,6 +35,8 @@ public class Archer : PlayerCharacter, ISpecialSkill, IUltimateSkill
     public override void Attack()
     {
         SpawnArrow(attackDamage);
+        
+
     }
 
     public void SpecialAbility()
