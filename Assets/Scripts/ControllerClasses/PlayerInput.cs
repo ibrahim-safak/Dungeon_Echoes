@@ -9,11 +9,15 @@ public class PlayerInput : MonoBehaviour
     private CameraController cameraController;
     private Warrior warrior;
     private Archer archer;
+    private Sorcerer sorcerer;
 
     public bool Walk = false;
     public bool WalkingBackward = false;
     public bool WalkLeft = false;
     public bool WalkRight = false;
+    
+private float currentVerticalAim = 0f;
+public float AimSensitivity = 1f;
 
 
 
@@ -24,6 +28,7 @@ public class PlayerInput : MonoBehaviour
         cameraController = GetComponent<CameraController>();
         warrior = GetComponent<Warrior>();
         archer = GetComponent<Archer>();
+        sorcerer = GetComponent<Sorcerer>();
 
     }
 
@@ -40,9 +45,9 @@ public class PlayerInput : MonoBehaviour
         animator?.SetBool("WalkLeft", WalkLeft);
         animator?.SetBool("WalkRight", WalkRight);
 
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = Input.GetAxis("Mouse Y");
-        cameraController.RotateCamera(new Vector2(mouseX, mouseY));
+        float Horizontal = Input.GetAxis("Mouse X");
+        float Vertical = Input.GetAxis("Mouse Y");
+        cameraController.RotateCamera(new Vector2(Horizontal, Vertical));
 
 
         if (warrior != null)
@@ -62,7 +67,7 @@ public class PlayerInput : MonoBehaviour
         }
         if (archer != null)
         {
-
+            
 
             if (Input.GetMouseButtonDown(1))
             {
@@ -71,6 +76,15 @@ public class PlayerInput : MonoBehaviour
             if (Input.GetMouseButton(1))
             {
                 animator.SetBool("isWait", true);
+
+                float my = Input.GetAxis("Mouse Y");
+
+                
+                currentVerticalAim += my * AimSensitivity * Time.deltaTime;
+
+                currentVerticalAim = Mathf.Clamp(currentVerticalAim, -1f, 1f);
+
+                animator.SetFloat("VerticalAim", currentVerticalAim);
 
             }
 
@@ -93,6 +107,23 @@ public class PlayerInput : MonoBehaviour
                 archer.UltimateAbility();
             }
         }
+
+        if (sorcerer != null)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                sorcerer.Attack();
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                sorcerer.SpecialAbility();
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                sorcerer.UltimateAbility();
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             physicalMovement.Jump();

@@ -10,12 +10,12 @@ public class Arrow : MonoBehaviour
     private float damage = 10f;
     public float lifeTime = 5f;
     private Rigidbody rb;
-    private Animator animator;
+    
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+       
         Destroy(gameObject, lifeTime);
     }
 
