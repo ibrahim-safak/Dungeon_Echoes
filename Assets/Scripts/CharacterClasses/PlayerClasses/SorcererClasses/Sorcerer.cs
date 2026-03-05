@@ -150,35 +150,15 @@ private IEnumerator UltiPulseRoutine()
                 if (hit.transform.root.CompareTag("Player")) continue;
 
                 
-                 
-                if (enemy != null)
-                {
-                    enemy.TakeDamage(ultimateDamagePerSecond * Time.deltaTime);
-                }
+               
 
-                // FORCE (yatay, süreye yay)
-                Rigidbody targetRb = hit.attachedRigidbody;
-                if (targetRb != null)
-                {
-                    if (targetRb.transform.IsChildOf(transform)) continue;
-
-                    Vector3 dir = (targetRb.position - transform.position);
-                    dir.y = 0f;
-                    dir = dir.sqrMagnitude < 0.0001f ? transform.forward : dir.normalized;
-
-                    // Süreye yaymak için ForceMode.Force daha mantıklı
-                    targetRb.AddForce(dir * ultimateForcePerSecond, ForceMode.Force);
-                }
+               
             }
 
-            t += Time.deltaTime;     // ✅ foreach dışına alındı
-            yield return null;       // ✅ foreach dışına alındı
+            t += Time.deltaTime;    
+            yield return null;       
         }
     }
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawWireSphere(transform.position, specialAbilityRadius);
-        Gizmos.DrawWireSphere(transform.position, ultimateRadius);
-    }
+    
 }
 
