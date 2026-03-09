@@ -41,6 +41,7 @@ public class Sorcerer : PlayerCharacter, ISpecialSkill, IUltimateSkill
     }
     public override void Attack()
     {
+        animator.SetTrigger("Attack");
         SpawnMagicProjectile(attackDamage);
     }
 
@@ -67,7 +68,6 @@ public class Sorcerer : PlayerCharacter, ISpecialSkill, IUltimateSkill
         if (Time.time - lastUltimateTime < ultimateCooldown) return;
         lastUltimateTime = Time.time;
 
-        animator.SetTrigger("Ultimate");
         StartCoroutine(UltiPulseRoutine());
     }
 
@@ -78,6 +78,7 @@ public class Sorcerer : PlayerCharacter, ISpecialSkill, IUltimateSkill
 
             while (t < specialAbilityDuration)
             {
+
                 Collider[] hits = (affectedMask.value == 0)
                     ? Physics.OverlapSphere(transform.position, specialAbilityRadius)
                     : Physics.OverlapSphere(transform.position, specialAbilityRadius, affectedMask);
@@ -86,33 +87,29 @@ public class Sorcerer : PlayerCharacter, ISpecialSkill, IUltimateSkill
                 {
                     if (!hit) continue;
 
-                    // Kendini etkilemesin
                     if (hit.transform.IsChildOf(transform)) continue;
 
-                    // Player'ları etkilemesin
                     if (hit.transform.root.CompareTag("Player")) continue;
 
                     Rigidbody targetRb = hit.attachedRigidbody;
                     if (targetRb == null) continue;
 
-                    // Ek güvenlik: rigidbody benimkisi ise geç
                     if (targetRb.transform.IsChildOf(transform)) continue;
 
                     Vector3 toTarget = targetRb.position - transform.position;
                     float dist = toTarget.magnitude;
                     if (dist < 0.0001f) continue;
 
-                    Vector3 outward = toTarget / dist; // dışarı yön
+                    Vector3 outward = toTarget / dist; 
 
-                    // 1) İçeri doğru hız bileşenini kaldır (yaklaşmayı engeller, itmez)
                     Vector3 v = targetRb.velocity;
-                    float inwardSpeed = Vector3.Dot(v, -outward); // merkeze doğru hız
+                    float inwardSpeed = Vector3.Dot(v, -outward); 
                     if (inwardSpeed > 0f)
                     {
                         targetRb.velocity = v + outward * inwardSpeed;
                     }
 
-                    // 2) Çok az pozisyon düzeltmesi (uçurma yok)
+                    
                     float minDist = specialAbilityRadius + boundaryPadding;
                     if (dist < minDist)
                     {
@@ -132,8 +129,13 @@ public class Sorcerer : PlayerCharacter, ISpecialSkill, IUltimateSkill
         Gizmos.DrawWireSphere(transform.position, specialAbilityRadius);
     }
 
-private IEnumerator UltiPulseRoutine()
+    private IEnumerator UltiPulseRoutine()
     {
+        if (animator != null)
+        {
+            animator.SetBool("UltimateActive", true);
+        }
+
         float t = 0f;
 
         while (t < ultimateDuration)
@@ -145,20 +147,36 @@ private IEnumerator UltiPulseRoutine()
             foreach (var hit in hits)
             {
                 if (!hit) continue;
-
                 if (hit.transform.IsChildOf(transform)) continue;
                 if (hit.transform.root.CompareTag("Player")) continue;
 
-                
-               
+                var dmg = hit.GetComponent<IDamageable>();
+                if (dmg != null)
+                {
+                    dmg.TakeDamage(ultimateDamagePerSecond * Time.deltaTime);
+                }
 
-               
+                Rigidbody targetRb = hit.attachedRigidbody;
+                if (targetRb != null)
+                {
+                    Vector3 pullDirection = transform.position - hit.transform.position;
+                    float distance = pullDirection.magnitude;
+
+                    if (distance > 0.5f)
+                    {
+                        targetRb.AddForce(pullDirection.normalized * ultimateForcePerSecond, ForceMode.Acceleration);
+                    }
+                }
             }
 
-            t += Time.deltaTime;    
-            yield return null;       
+            t += Time.deltaTime;
+            yield return null;
+        }
+
+        if (animator != null)
+        {
+            animator.SetBool("UltimateActive", false);
         }
     }
-    
 }
 
