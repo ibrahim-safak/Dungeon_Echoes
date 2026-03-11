@@ -31,6 +31,10 @@ public class Warrior : PlayerCharacter,  ISpecialSkill, IUltimateSkill
     private float lastDashTime=0f;
     private bool isDashing = false;
     private Rigidbody rb;
+    public override void TakeDamage(float amount)
+    {
+        base.TakeDamage(amount);
+    }
 
     
 
@@ -106,7 +110,7 @@ public class Warrior : PlayerCharacter,  ISpecialSkill, IUltimateSkill
     {
         if (Time.time - lastAttackTime < attackCooldown) return;
 
-        Debug.Log("hýzlý saldýrý");
+       
         animator.SetTrigger("Attack");
         RaycastHit hit;
         if (Physics.Raycast(CameraTransform.position, CameraTransform.forward, out hit, attackRange, LayerMask))

@@ -11,10 +11,7 @@ public class PlayerInput : MonoBehaviour
     private Archer archer;
     private Sorcerer sorcerer;
 
-    /*public bool Walk = false;
-    public bool WalkingBackward = false;
-    public bool WalkLeft = false;
-    public bool WalkRight = false;*/
+    
     public float VerticalKey;
     public float HorizontalKey;
     
@@ -36,22 +33,13 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        /* Walk = Input.GetKey(KeyCode.W);
-         WalkingBackward = Input.GetKey(KeyCode.S);
-         WalkLeft = Input.GetKey(KeyCode.A);
-         WalkRight = Input.GetKey(KeyCode.D);*/
+        
         float xValue = Input.GetAxis("Horizontal");
         float zValue = Input.GetAxis("Vertical");
          animator.SetFloat("HorizontalKey", xValue);
          animator.SetFloat("VerticalKey", zValue);
 
 
-
-        // Null-safe animator çaðrýlarý
-        /* animator?.SetBool("Walk", Walk);
-         animator?.SetBool("WalkingBackward", WalkingBackward);
-         animator?.SetBool("WalkLeft", WalkLeft);
-         animator?.SetBool("WalkRight", WalkRight);*/
 
         float Horizontal = Input.GetAxis("Mouse X");
         float Vertical = Input.GetAxis("Mouse Y");

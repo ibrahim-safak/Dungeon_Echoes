@@ -4,17 +4,32 @@ using UnityEngine;
 
 public class HostileCharacter : BaseCharacter
 {
-    public override float Health => throw new System.NotImplementedException();
+    private Animator animator;
 
-    public override void Attack()
+    protected override void Start()
     {
-        throw new System.NotImplementedException();
+        base.Start();
+        animator = GetComponent<Animator>();
     }
 
     public override void die()
     {
-        throw new System.NotImplementedException();
+        Debug.Log($"{gameObject.name} (düþman) öldü.");
+        animator?.SetTrigger("Die");
+
+        // Collider ve davranýþlarý kapat
+        var col = GetComponent<Collider>();
+        if (col != null) col.enabled = false;
+
+        // AI component varsa kapatýlmalý (ör: EnemyAI)
+        var ai = GetComponent<MonoBehaviour>(); // uygun AI script'i burada kapatýlmalý
+        if (ai != null) ai.enabled = false;
+
+        Destroy(gameObject, 3f);
     }
 
-    
+    public virtual void Attack()
+    {
+        // Boþ - alt sýnýflar implement eder
+    }
 }

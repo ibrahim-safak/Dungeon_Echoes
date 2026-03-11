@@ -1,32 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody), typeof(Collider))]
 public class Arrow : MonoBehaviour
 {
     public float speed = 25f;
     private float damage = 10f;
     public float lifeTime = 5f;
     private Rigidbody rb;
-    
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-       
         Destroy(gameObject, lifeTime);
     }
 
-    private void Start()
+    private void Update()
     {
-        if (rb != null)
-        {
-            rb.velocity = transform.forward * speed;
-        }
+        if (rb == null) return;
+        rb.velocity = transform.forward * speed;
     }
-
 
     public void SetDamage(float d)
     {
@@ -35,13 +29,13 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) return; 
-
-        var dmg = other.GetComponent<IDamageable>();
-        if (dmg != null)
+        // Kendine atanmýþ owner collision'ýný kontrol edin (isteðe baðlý)
+        IDamageable target = other.GetComponent<IDamageable>();
+        if (target != null)
         {
-            dmg.TakeDamage(damage);
+            target.TakeDamage(damage);
         }
+
         Destroy(gameObject);
     }
 }
