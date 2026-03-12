@@ -12,7 +12,7 @@ public abstract class BaseCharacter : MonoBehaviour, IDamageable
     // Saðlýk deðiþikliðini dinlemek için event (UI vb. için)
     public event Action<float, float> OnHealthChanged; // (current, max)
 
-    // Okunabilir health
+    
     public virtual float Health => currentHealth;
 
     protected virtual void Start()
@@ -38,6 +38,5 @@ public abstract class BaseCharacter : MonoBehaviour, IDamageable
         }
     }
 
-    // Alt sýnýflar ölme davranýþýný override edebilir
     public abstract void die();
 }

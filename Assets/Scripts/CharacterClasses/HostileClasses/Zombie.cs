@@ -6,10 +6,10 @@ using UnityEngine.AI;
 public class Zombie : HostileCharacter
 {
     [Header("Zombie Specific")]
-    [SerializeField] private float attackRange = 2f;
+    
     [SerializeField] private float Damage = 10f;
-    [SerializeField] private float attackRate = 1f;
-    [SerializeField] private float nextAttackTime = 0f;
+    [SerializeField] private float attackRate = 2.7f;
+    [SerializeField] private float nextAttackTime = 1f;
     [SerializeField] private float attackDistance = 2f;
     [SerializeField] private LayerMask LayerMask;
 
@@ -17,6 +17,16 @@ public class Zombie : HostileCharacter
     private Transform player;
     private Animator animator;
 
+    public override void TakeDamage(float damage)
+    {
+        base.TakeDamage(damage);
+        if (Health <= 0)
+        {
+            die();
+        }
+    }
+
+    public override float Health => base.Health;
     protected override void Start()
     {
         base.Start();
@@ -41,7 +51,7 @@ public class Zombie : HostileCharacter
             FollowPlayer();
         }
 
-        animator.SetFloat("Speed", agent.velocity.magnitude);
+        animator.SetFloat("MovementSpeed", agent.velocity.magnitude);
     }
     private void FollowPlayer() { 
         agent.isStopped = false;
@@ -63,11 +73,20 @@ public class Zombie : HostileCharacter
 
             nextAttackTime = Time.time + attackRate;
 
+            player.GetComponent<IDamageable>()?.TakeDamage(Damage);
             
-          //  player?.GetComponent<PlayerHealth>().TakeDamage(10);
         }
+        
 
+     }
+    public override void die()
+    {
+        animator.SetTrigger("Die");
+        agent.isStopped = true;
+        
+        GetComponent<Collider>().enabled = false;
+        this.enabled = false;
+        Destroy(gameObject,4.3f);
     }
-
 
 }
