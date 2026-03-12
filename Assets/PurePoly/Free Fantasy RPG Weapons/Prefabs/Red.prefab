@@ -122,6 +122,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   lifeTime: 5
+  pullForce: 50
+  launchDelay: 0.73
+  explosionPrefab: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
 --- !u!54 &-8559214638362421764
 Rigidbody:
   m_ObjectHideFlags: 0

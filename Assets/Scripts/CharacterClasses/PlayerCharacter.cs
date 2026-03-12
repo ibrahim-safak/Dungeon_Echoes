@@ -4,7 +4,8 @@ using UnityEngine;
 
 public abstract class PlayerCharacter : BaseCharacter
 {
-    public override float Health => throw new System.NotImplementedException();
+    // BaseCharacter zaten Health saðlýyor, override gerekirse buradan yapabilirsiniz.
+    // public override float Health => currentHealth; // opsiyonel
 
     protected override void Start()
     {
@@ -16,10 +17,10 @@ public abstract class PlayerCharacter : BaseCharacter
         Debug.Log("OYUNCU ÖLDÜ! Game Over.");
         // Buraya oyun bitiþ ekraný kodu gelecek.
     }
-    public override void Attack()
-    {
-        // Temel saldýrý mekanizmasý burada tanýmlanabilir.
-        // Her karakter sýnýfý bunu kendi özel saldýrýsýyla override edebilir.
-    }
 
+    // Alt sýnýflar (Warrior, Mage, Archer) bunu override edecek
+    public virtual void Attack()
+    {
+        // Boþ - alt sýnýflar implement eder
+    }
 }

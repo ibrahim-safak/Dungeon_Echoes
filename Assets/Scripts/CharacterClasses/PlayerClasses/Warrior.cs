@@ -31,6 +31,10 @@ public class Warrior : PlayerCharacter,  ISpecialSkill, IUltimateSkill
     private float lastDashTime=0f;
     private bool isDashing = false;
     private Rigidbody rb;
+    public override void TakeDamage(float amount)
+    {
+        base.TakeDamage(amount);
+    }
 
     
 
@@ -78,7 +82,11 @@ public class Warrior : PlayerCharacter,  ISpecialSkill, IUltimateSkill
 
     public override void die()
     {
-        throw new System.NotImplementedException();
+            Debug.Log("Warrior öldü! Game Over.");
+            // Buraya oyun bitiþ ekraný kodu gelecek.
+          base.die();
+
+       
     }
 
     public void UltimateAbility()
@@ -106,17 +114,29 @@ public class Warrior : PlayerCharacter,  ISpecialSkill, IUltimateSkill
     {
         if (Time.time - lastAttackTime < attackCooldown) return;
 
-        Debug.Log("hýzlý saldýrý");
+       
         animator.SetTrigger("Attack");
         RaycastHit hit;
+
         if (Physics.Raycast(CameraTransform.position, CameraTransform.forward, out hit, attackRange, LayerMask))
         {
+            // Çarptýðý noktayý Editörde (Scene kýsmýnda) görmek için:
+            Debug.DrawRay(CameraTransform.position, CameraTransform.forward * hit.distance, Color.red, 2f);
+
+            // Çarptýðý noktaya fiziksel olmayan bir görsel nokta ekleyelim (Sadece Scene view):
+            Debug.Log("Saldýrý yapýldý, hedef: " + hit.collider.name + " | Konum: " + hit.point);
+
             IDamageable damageable = hit.collider.GetComponent<IDamageable>();
             if (damageable != null)
             {
                 damageable.TakeDamage(Damage);
                 Debug.Log("Düþmana " + Damage + " hasar verildi.");
             }
+        }
+        else
+        {
+            // Hiçbir yere çarpmadýysa boþluðu kýrmýzý çizelim
+            Debug.DrawRay(CameraTransform.position, CameraTransform.forward * attackRange, Color.green, 2f);
         }
     }
 
