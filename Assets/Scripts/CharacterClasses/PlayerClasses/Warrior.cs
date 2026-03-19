@@ -6,9 +6,9 @@ public class Warrior : PlayerCharacter,  ISpecialSkill, IUltimateSkill
 {
 
     [Header("Warrior Özellikleri")]
-    [SerializeField] private float attackRange = 3f;
+    [SerializeField] private float attackRange = 2;
     [SerializeField] private float Damage = 20f;
-    [SerializeField] private float attackCooldown = 0.35f; 
+    [SerializeField] private float attackCooldown = 0.5f; 
     [SerializeField] private float runSpeed = 5f;
 
     [Header("Atýlma ayarlarý")]
@@ -120,17 +120,12 @@ public class Warrior : PlayerCharacter,  ISpecialSkill, IUltimateSkill
 
         if (Physics.Raycast(CameraTransform.position, CameraTransform.forward, out hit, attackRange, LayerMask))
         {
-            // Çarptýðý noktayý Editörde (Scene kýsmýnda) görmek için:
-            Debug.DrawRay(CameraTransform.position, CameraTransform.forward * hit.distance, Color.red, 2f);
 
-            // Çarptýðý noktaya fiziksel olmayan bir görsel nokta ekleyelim (Sadece Scene view):
-            Debug.Log("Saldýrý yapýldý, hedef: " + hit.collider.name + " | Konum: " + hit.point);
 
             IDamageable damageable = hit.collider.GetComponent<IDamageable>();
             if (damageable != null)
             {
                 damageable.TakeDamage(Damage);
-                Debug.Log("Düþmana " + Damage + " hasar verildi.");
             }
         }
         else

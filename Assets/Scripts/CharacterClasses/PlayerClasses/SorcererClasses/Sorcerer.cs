@@ -44,6 +44,7 @@ public class Sorcerer : PlayerCharacter, ISpecialSkill, IUltimateSkill
         animator.SetTrigger("Attack");
         SpawnMagicProjectile(attackDamage);
     }
+    
 
     private void SpawnMagicProjectile(float damage)
     {
@@ -153,7 +154,7 @@ public class Sorcerer : PlayerCharacter, ISpecialSkill, IUltimateSkill
                 var dmg = hit.GetComponent<IDamageable>();
                 if (dmg != null)
                 {
-                    dmg.TakeDamage(ultimateDamagePerSecond * Time.deltaTime);
+                    dmg.TakeDamage(ultimateDamagePerSecond * Time.fixedDeltaTime);
                 }
 
                 Rigidbody targetRb = hit.attachedRigidbody;
@@ -169,8 +170,10 @@ public class Sorcerer : PlayerCharacter, ISpecialSkill, IUltimateSkill
                 }
             }
 
-            t += Time.deltaTime;
+            t += Time.fixedDeltaTime;
             yield return null;
+            
+
         }
 
         if (animator != null)
