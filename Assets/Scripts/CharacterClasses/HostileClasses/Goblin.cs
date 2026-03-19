@@ -1,24 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class GoblinArcher : HostileCharacter
 {
     [Header("Goblin Specific")]
-    [SerializeField] private float damage = 10f;
     [SerializeField] private float attackRate = 3f;
     private float nextAttackTime = 0f;
 
     [Tooltip("Hangi mesafeden ok atmaya baþlasýn?")]
     [SerializeField] private float attackDistance = 10f;
+    [SerializeField] private float fleeDistance = 5f;
 
     [Tooltip("Hangi oranda tam isabet etsin? (0.4 = %40)")]
     [SerializeField] private float accuracy = 0.4f;
 
     [Header("Projectile Settings")]
     [SerializeField] private GameObject arrowPrefab;
-    [SerializeField] private Transform bowStringPoint; // Okun çýkacaðý el/yay noktasý
+    [SerializeField] private Transform bowStringPoint; 
     [SerializeField] private float arrowSpeed = 15f;
 
     private NavMeshAgent agent;
@@ -35,7 +36,6 @@ public class GoblinArcher : HostileCharacter
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        // Karakterin dibine girmemesi için NavMesh durma mesafesini setle
         agent.stoppingDistance = attackDistance - 1f;
     }
 
@@ -45,27 +45,52 @@ public class GoblinArcher : HostileCharacter
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        if (distanceToPlayer <= attackDistance)
+        if (Health <= 50 && distanceToPlayer < fleeDistance)
+        {
+            FleeFromPlayer();
+        }
+        else if (distanceToPlayer <= attackDistance)
         {
             Attack();
         }
         else
         {
+            animator.SetBool("Attack", false);
             FollowPlayer();
         }
+        
 
         animator.SetFloat("MovementSpeed", agent.velocity.magnitude);
     }
 
+    private void FleeFromPlayer()
+    {
+        agent.stoppingDistance = 0f;
+        agent.isStopped = false;
+        animator.SetBool("Attack", false);
+
+        Vector3 fleeDirection = (transform.position - player.position).normalized;
+        Vector3 targetPoint = transform.position + fleeDirection * 10f;
+
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(targetPoint, out hit, 10f, NavMesh.AllAreas))
+        {
+            agent.SetDestination(hit.position);
+        }
+
+        agent.speed = 2f;
+    }
     private void FollowPlayer()
     {
+        agent.speed = 3.5f; 
+        agent.stoppingDistance = attackDistance - 1f; 
         agent.isStopped = false;
         agent.SetDestination(player.position);
     }
 
     public override void Attack()
     {
-        // Ok atarken hareket etmesin ama oyuncuya dönsün
+        
         agent.isStopped = true;
 
         Vector3 direction = (player.position - transform.position).normalized;
@@ -74,11 +99,11 @@ public class GoblinArcher : HostileCharacter
 
         if (Time.time >= nextAttackTime)
         {
-            animator.SetTrigger("Attack"); // Ok atma animasyonunu tetikle
+           animator.SetBool("Attack", true);
             nextAttackTime = Time.time + attackRate;
-            // Not: Ok yaratma iþlemini animasyonun tam o anýnda yapmak için 
-            // istersen Invoke kullanabilirsin ya da aþaðýdakini direkt çaðýrabilirsin.
-            StartCoroutine(ShootWithDelay(1f));
+            
+            StartCoroutine(ShootWithDelay(1.4f));
+            
         }
     }
 
@@ -87,29 +112,25 @@ public class GoblinArcher : HostileCharacter
         yield return new WaitForSeconds(delay);
         if (isDead) yield break;
 
-        // 1. Hedef Belirleme (%40 Doðruluk Mantýðý)
-        Vector3 targetPosition = player.position + Vector3.up * 1.2f; // Karakterin gövdesini hedefle
+        Vector3 targetPosition = player.position + Vector3.up * 1.2f; 
 
         if (Random.value > accuracy)
         {
-            // Iskala: Rastgele bir sapma ekle
             Vector3 deviation = Random.insideUnitSphere * 2.5f;
             targetPosition += deviation;
         }
 
-        // 2. Oku Oluþtur ve Fýrlat
         GameObject arrow = Instantiate(arrowPrefab, bowStringPoint.position, Quaternion.identity);
 
-        // Oku hedefe yönelt
         Vector3 shootDirection = (targetPosition - bowStringPoint.position).normalized;
         arrow.transform.forward = shootDirection;
 
-        // Oku ileri it (Okun üzerinde Rigidbody olmalý)
         Rigidbody rb = arrow.GetComponent<Rigidbody>();
         if (rb != null)
         {
             rb.velocity = shootDirection * arrowSpeed;
         }
+        animator.SetBool("Attack", false);
     }
 
     public override void TakeDamage(float damage)
@@ -123,8 +144,11 @@ public class GoblinArcher : HostileCharacter
     {
         isDead = true;
         animator.SetBool("IsDead", true);
+
         agent.enabled = false;
+
         GetComponent<Collider>().enabled = false;
+
         Destroy(this.gameObject, 4f);
     }
 }

@@ -126,7 +126,6 @@ public class Warrior : PlayerCharacter,  ISpecialSkill, IUltimateSkill
             if (damageable != null)
             {
                 damageable.TakeDamage(Damage);
-                Debug.Log("Düþmana " + Damage + " hasar verildi.");
             }
         }
         else
