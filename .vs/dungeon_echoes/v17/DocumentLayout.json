@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\hostileclasses\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\characterclasses\\hostileclasses\\zombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|c:\\users\\ibrah\\project\\game project\\unity project\\dungeon_echoes\\assets\\scripts\\characterclasses\\hostileclasses\\zombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\hostileclasses\\zombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\characterclasses\\playerclasses\\warrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\playerclasses\\warrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\characterclasses\\hostileclasses\\goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\hostileclasses\\goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|c:\\users\\ibrah\\project\\game project\\unity project\\dungeon_echoes\\assets\\scripts\\characterclasses\\playerclasses\\warrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterclasses\\playerclasses\\warrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36E6B89B-7DA0-AEE5-25FB-F675E805D220}|Assembly-CSharp.csproj|C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\assets\\scripts\\controllerclasses\\physicalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -108,13 +108,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Zombie.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\HostileClasses\\Zombie.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\HostileClasses\\Zombie.cs",
+              "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\HostileClasses\\Zombie.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\HostileClasses\\Zombie.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAUwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:54:30.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Boss.cs",
               "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\HostileClasses\\Boss.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\HostileClasses\\Boss.cs",
               "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\HostileClasses\\Boss.cs",
               "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\HostileClasses\\Boss.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T13:05:54.873Z",
               "EditorCaption": ""
@@ -133,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Goblin.cs",
               "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\HostileClasses\\Goblin.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\HostileClasses\\Goblin.cs",
@@ -170,13 +183,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Warrior.cs",
               "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\Warrior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\Warrior.cs",
               "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\PlayerClasses\\Warrior.cs",
               "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\PlayerClasses\\Warrior.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAowIsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-11T14:41:26.143Z",
               "EditorCaption": ""
@@ -264,40 +277,6 @@
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-08T13:02:01.073Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "84e5f848-852b-4e8a-9ea4-7ed8e16a01b7",
-        "Display": 0,
-        "X": 864,
-        "Y": 219,
-        "Width": 1292,
-        "Height": 527,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Zombie.cs",
-              "DocumentMoniker": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\HostileClasses\\Zombie.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterClasses\\HostileClasses\\Zombie.cs",
-              "ToolTip": "C:\\Users\\ibrah\\Project\\Game Project\\Unity Project\\dungeon_echoes\\Assets\\Scripts\\CharacterClasses\\HostileClasses\\Zombie.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CharacterClasses\\HostileClasses\\Zombie.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T12:54:30.83Z",
-              "EditorCaption": ""
             }
           ]
         }
