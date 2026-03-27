@@ -2,25 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class PlayerCharacter : BaseCharacter
+public abstract class PlayerCharacter : BaseCharacter 
 {
-    // BaseCharacter zaten Health saðlýyor, override gerekirse buradan yapabilirsiniz.
-    // public override float Health => currentHealth; // opsiyonel
+    private float interactionDistance = 3f; // Etkileþim mesafesi
+    [SerializeField] private LayerMask interactableLayer; // Etkileþim yapýlabilir nesnelerin katmaný
 
+    // interactionMask yerine interactableLayer kullanýlmalý
     protected override void Start()
     {
-        base.Start(); // BaseCharacter'daki can doldurmayý çalýþtýr
+        base.Start(); 
     }
 
     public override void die()
     {
         Debug.Log("OYUNCU ÖLDÜ! Game Over.");
-        // Buraya oyun bitiþ ekraný kodu gelecek.
     }
 
-    // Alt sýnýflar (Warrior, Mage, Archer) bunu override edecek
     public virtual void Attack()
     {
         // Boþ - alt sýnýflar implement eder
+    }
+    public virtual void Interact()
+    {
+        Transform origin = Camera.main != null ? Camera.main.transform : transform;
+        RaycastHit hit;
+        bool didHit;
+
+        if (interactableLayer.value == 0)
+        {
+            didHit = Physics.Raycast(origin.position, origin.forward, out hit, interactionDistance);
+        }
+        else
+        {
+            didHit = Physics.Raycast(origin.position, origin.forward, out hit, interactionDistance, interactableLayer);
+        }
+
+        if (!didHit) return;
+
+        var interactable = hit.collider.GetComponent<IInteractable>();
+        if (interactable != null)
+        {
+            interactable.Interact();
+        }
     }
 }

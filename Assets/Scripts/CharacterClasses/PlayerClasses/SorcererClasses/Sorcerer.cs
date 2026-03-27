@@ -180,6 +180,8 @@ public class Sorcerer : PlayerCharacter, ISpecialSkill, IUltimateSkill
         {
             animator.SetBool("UltimateActive", false);
         }
+        
     }
+    
 }
 

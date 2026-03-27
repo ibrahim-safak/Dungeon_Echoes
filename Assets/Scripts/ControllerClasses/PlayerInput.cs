@@ -10,8 +10,9 @@ public class PlayerInput : MonoBehaviour
     private Warrior warrior;
     private Archer archer;
     private Sorcerer sorcerer;
+    private PlayerCharacter playerCharacter;
 
-    
+
     public float VerticalKey;
     public float HorizontalKey;
     
@@ -28,6 +29,7 @@ public class PlayerInput : MonoBehaviour
         warrior = GetComponent<Warrior>();
         archer = GetComponent<Archer>();
         sorcerer = GetComponent<Sorcerer>();
+        playerCharacter = GetComponent<PlayerCharacter>();
 
     }
 
@@ -124,6 +126,11 @@ public class PlayerInput : MonoBehaviour
         {
             physicalMovement.Jump();
 
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            playerCharacter?.Interact();
         }
     }
 }
