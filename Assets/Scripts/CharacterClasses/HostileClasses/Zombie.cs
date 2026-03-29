@@ -117,7 +117,9 @@ public class Zombie : HostileCharacter
         Debug.Log("Zombie öldü!");
         isDead = true; 
         animator.SetBool("IsDead", true);
-        
+
+        RoomManager rm = Object.FindFirstObjectByType<RoomManager>();
+        if (rm != null) rm.ZombieDied();
         
 
         agent.enabled = false; 

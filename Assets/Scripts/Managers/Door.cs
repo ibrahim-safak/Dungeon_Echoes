@@ -5,66 +5,91 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     [Header("Ayarlar")]
-    public bool isLocked = false;       // Kapý kilitli mi?
-    public string requiredKeyName;      // Gerekli anahtarýn ID'si
+    public bool isLocked = false;
+    public string requiredKeyName; 
+    public KeyCode interactKey = KeyCode.E; 
+    public float autoCloseDelay = 3f; 
 
     [Header("Referanslar")]
-    public Animator doorAnimator;       // Kapý animasyonu için
+    public Animator doorAnimator;
 
     private bool isOpen = false;
+    private Coroutine closeCoroutine;
 
-    // Oyuncu Collider'a girdiði an bu fonksiyon çalýþýr
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        // Gelen objenin "Player" olduðundan emin olalým
         if (other.CompareTag("Player"))
         {
-           /* if (isLocked)
+            if (Input.GetKeyDown(interactKey))
             {
-                // Oyuncunun üzerindeki envanter sistemini kontrol et
-                Inventory playerInv = other.GetComponent<Inventory>();
-
-                if (playerInv != null && playerInv.HasKey(requiredKeyName))
-                {
-                    OpenDoor();
-                }
-                else
-                {
-                    Debug.Log("Kilitli! Anahtar lazým: " + requiredKeyName);
-                }
-            }*/
-            if (!isLocked)
-            {
-                OpenDoor();
+                Interact(other.transform);
             }
         }
     }
-    private void OnTriggerExit(Collider other)
+
+    private void Interact(Transform playerTransform)
     {
-        if (other.CompareTag("Player") && isOpen)
+        if (isLocked) 
+        {
+            Debug.Log("KapÄ± kilitli!");
+            return;
+        }
+
+        if (!isOpen)
+        {
+            OpenDoor(playerTransform);
+            
+            if (closeCoroutine != null) StopCoroutine(closeCoroutine);
+            
+            closeCoroutine = StartCoroutine(CloseDoorAfterDelay());
+        }
+        else
         {
             CloseDoor();
         }
     }
 
-    public void OpenDoor()
+    public void OpenDoor(Transform player)
     {
-        if (isOpen) return;
+        float distanceToPlayerB = Vector3.Distance(transform.GetChild(1).position, player.position);
+        float distanceToPlayerF = Vector3.Distance(transform.GetChild(2).position, player.position);
+
+        if (distanceToPlayerB < distanceToPlayerF)
+        {
+            doorAnimator.SetFloat("OpenDirection", -1f);
+        }
+        else
+        {
+            doorAnimator.SetFloat("OpenDirection", 1f);
+        }
 
         isOpen = true;
-        if (doorAnimator != null)
-        {
-            doorAnimator.SetBool("IsOpening", true);
-        }
-               
     }
+
     public void CloseDoor()
     {
-        isOpen = false;
         if (doorAnimator != null)
         {
-            doorAnimator.SetBool("IsOpening", false);
+            doorAnimator.SetFloat("OpenDirection", 0f);
+        }
+
+        isOpen = false;
+
+        if (closeCoroutine != null) 
+        {
+            StopCoroutine(closeCoroutine);
+            closeCoroutine = null;
         }
         
+    }
+
+    IEnumerator CloseDoorAfterDelay()
+    {
+        yield return new WaitForSeconds(autoCloseDelay);
+        
+        if (isOpen) 
+        {
+            CloseDoor();
+        }
     }
 }

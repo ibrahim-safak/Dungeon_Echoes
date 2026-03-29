@@ -7,7 +7,7 @@ public class Boss : HostileCharacter
 {
     [Header("Menzil Ayarlarý")]
     [SerializeField] private float attackDistance = 3f;      // Yakýn vuruþ mesafesi
-    [SerializeField] private float jumpAttackRange = 12f;   // Zýplama saldýrýsý tetiklenme mesafesi
+    
 
     [Header("Saldýrý Deðerleri")]
     [SerializeField] private float meleeDamage = 15f;
