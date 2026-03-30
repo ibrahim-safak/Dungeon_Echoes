@@ -20,7 +20,7 @@ public class SecretTrigger : MonoBehaviour , IInteractable
         if (doorScript != null)
         {
             Debug.Log("Gizli mekanizma tetiklendi!");
-            doorScript.ToggleDoor(); // Kapýyý aç/kapat
+            doorScript.ToggleDoor(); 
             hasTriggered = true;
 
             // Opsiyonel: Tetikleyiciye (kitap gibi) bir hareket ver
