@@ -26,6 +26,7 @@ public class GoblinArcher : HostileCharacter
     private Transform player;
     private Animator animator;
     public bool isDead = false;
+    public bool isFlee = false;
 
     public override float Health => base.Health;
 
@@ -45,6 +46,11 @@ public class GoblinArcher : HostileCharacter
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
+        if (isFlee && distanceToPlayer > attackDistance)
+        {
+            isFlee = false;
+        }
+
         if (Health <= 50 && distanceToPlayer < fleeDistance)
         {
             FleeFromPlayer();
@@ -58,7 +64,6 @@ public class GoblinArcher : HostileCharacter
             animator.SetBool("Attack", false);
             FollowPlayer();
         }
-        
 
         animator.SetFloat("MovementSpeed", agent.velocity.magnitude);
     }
@@ -67,6 +72,7 @@ public class GoblinArcher : HostileCharacter
     {
         agent.stoppingDistance = 0f;
         agent.isStopped = false;
+        isFlee = true; 
         animator.SetBool("Attack", false);
 
         Vector3 fleeDirection = (transform.position - player.position).normalized;
@@ -80,17 +86,9 @@ public class GoblinArcher : HostileCharacter
 
         agent.speed = 2f;
     }
-    private void FollowPlayer()
-    {
-        agent.speed = 3.5f; 
-        agent.stoppingDistance = attackDistance - 1f; 
-        agent.isStopped = false;
-        agent.SetDestination(player.position);
-    }
 
     public override void Attack()
     {
-        
         agent.isStopped = true;
 
         Vector3 direction = (player.position - transform.position).normalized;
@@ -98,20 +96,25 @@ public class GoblinArcher : HostileCharacter
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
 
         if (Time.time >= nextAttackTime)
-        {
-           animator.SetBool("Attack", true);
+        {                                                            
+            animator.SetBool("Attack", true);
+
             nextAttackTime = Time.time + attackRate;
-            
             StartCoroutine(ShootWithDelay(1.4f));
-            
         }
     }
-
+    private void FollowPlayer()
+    {
+        agent.speed = 3.5f; 
+        agent.stoppingDistance = attackDistance - 1f; 
+        agent.isStopped = false;
+        agent.SetDestination(player.position);
+    }
     IEnumerator ShootWithDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         if (isDead) yield break;
-
+        
         Vector3 targetPosition = player.position + Vector3.up * 1.2f; 
 
         if (Random.value > accuracy)

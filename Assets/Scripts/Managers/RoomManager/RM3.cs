@@ -32,7 +32,7 @@ public class RoomManager : MonoBehaviour
 
         zombiesRemaining = baseZombieCount + (totalEntries * extraZombiesPerEntry);
 
-        Debug.Log("Oda Aktif! Zombi Say�s�: " + zombiesRemaining);
+        Debug.Log("Oda Aktif! Zombi sayısı: " + zombiesRemaining);
 
 
         foreach (Door door in doorsToLock)
@@ -64,7 +64,7 @@ public class RoomManager : MonoBehaviour
         if (!isRoomActive) return;
 
         zombiesRemaining--;
-        Debug.Log("Zombi �ld�, kalan: " + zombiesRemaining);
+        Debug.Log("Zombi çldü, kalan: " + zombiesRemaining);
 
         if (zombiesRemaining <= 0)
         {
