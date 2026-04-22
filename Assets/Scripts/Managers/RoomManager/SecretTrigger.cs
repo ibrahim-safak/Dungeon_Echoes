@@ -10,7 +10,7 @@ public class SecretTrigger : MonoBehaviour , IInteractable
 
     private bool hasTriggered = false;
 
-    public void Interact()
+    public void Interact(GameObject player)
     {
         if (isOneTimeUse && hasTriggered) return;
 

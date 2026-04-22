@@ -145,4 +145,22 @@ public class Boss : HostileCharacter
             player.GetComponent<PlayerCharacter>()?.TakeDamage(meleeDamage);
         }
     }
+
+    public override void TakeDamage(float damage)
+    {
+            if (isDead) return;
+            base.TakeDamage(damage);
+            if (Health <= 0) die();
+    }
+
+    public override void die()
+    {
+        isDead = true;
+        animator.SetBool("IsDead", true);
+        agent.enabled = false;
+        rb.isKinematic = true;
+        GetComponent<Collider>().enabled = false;
+        Destroy(this.gameObject, 5f);
+    }
+
 }

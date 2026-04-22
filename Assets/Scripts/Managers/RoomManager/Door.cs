@@ -6,9 +6,9 @@ public class Door : MonoBehaviour
 {
     [Header("Ayarlar")]
     public bool isLocked = false;
-    public string requiredKeyName; 
-    public KeyCode interactKey = KeyCode.E; 
-    public float autoCloseDelay = 3f; 
+    public string KeyId; // Kilitli kapılar için gerekli anahtar bilgisi
+    public KeyCode interactKey = KeyCode.E;
+    public float autoCloseDelay = 3f;
 
     [Header("Referanslar")]
     public Animator doorAnimator;
@@ -22,25 +22,38 @@ public class Door : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
-                Interact(other.transform);
+                
+                Interact(other.gameObject);
             }
         }
     }
 
-    private void Interact(Transform playerTransform)
+    private void Interact(GameObject player)
     {
-        if (isLocked) 
+        // 1. ADIM: Kapı kilitli mi kontrol et?
+        if (isLocked)
         {
-            Debug.Log("Kapı kilitli!");
-            return;
+            InventoryManager inventory = player.GetComponent<InventoryManager>();
+
+            if (inventory != null && inventory.HasKey(KeyId))
+            {
+                Debug.Log("Doğru anahtar kullanıldı, kilit açıldı!");
+                isLocked = false;
+                
+            }
+            else
+            {
+                Debug.Log("Kapı kilitli ve doğru anahtarın yok!");
+                return;
+            }
         }
 
+        // 3. ADIM: Eğer kilitli değilse (veya kilit yeni açıldıysa) açma/kapama mantığı
         if (!isOpen)
         {
-            OpenDoor(playerTransform);
-            
+            OpenDoor(player.transform);
+
             if (closeCoroutine != null) StopCoroutine(closeCoroutine);
-            
             closeCoroutine = StartCoroutine(CloseDoorAfterDelay());
         }
         else
@@ -51,6 +64,7 @@ public class Door : MonoBehaviour
 
     public void OpenDoor(Transform player)
     {
+        // Mevcut yön algılama mantığın
         float distanceToPlayerB = Vector3.Distance(transform.GetChild(1).position, player.position);
         float distanceToPlayerF = Vector3.Distance(transform.GetChild(2).position, player.position);
 
@@ -75,19 +89,18 @@ public class Door : MonoBehaviour
 
         isOpen = false;
 
-        if (closeCoroutine != null) 
+        if (closeCoroutine != null)
         {
             StopCoroutine(closeCoroutine);
             closeCoroutine = null;
         }
-        
     }
 
     IEnumerator CloseDoorAfterDelay()
     {
         yield return new WaitForSeconds(autoCloseDelay);
-        
-        if (isOpen) 
+
+        if (isOpen)
         {
             CloseDoor();
         }

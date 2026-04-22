@@ -12,6 +12,7 @@ public abstract class PlayerCharacter : BaseCharacter
     {
         base.Start(); 
     }
+    
 
     public override void die()
     {
@@ -26,11 +27,14 @@ public abstract class PlayerCharacter : BaseCharacter
     {
         Transform origin = Camera.main != null ? Camera.main.transform : transform;
         RaycastHit hit;
+        Debug.DrawRay(origin.position, origin.forward * interactionDistance, Color.red, 1f); // Ray'i görselleþtir
         bool didHit;
+        
 
         if (interactableLayer.value == 0)
         {
             didHit = Physics.Raycast(origin.position, origin.forward, out hit, interactionDistance);
+            
         }
         else
         {
@@ -42,7 +46,7 @@ public abstract class PlayerCharacter : BaseCharacter
         var interactable = hit.collider.GetComponent<IInteractable>();
         if (interactable != null)
         {
-            interactable.Interact();
+            interactable.Interact(this.gameObject);
         }
     }
 }

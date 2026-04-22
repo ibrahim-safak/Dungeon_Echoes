@@ -13,7 +13,7 @@ public class FogTrigger : MonoBehaviour, IInteractable
 
     private bool hasTriggered = false;
 
-    public void Interact()
+    public void Interact(GameObject player)
     {
         if (hasTriggered || connectedRoom.isFogDisabled) return;
 

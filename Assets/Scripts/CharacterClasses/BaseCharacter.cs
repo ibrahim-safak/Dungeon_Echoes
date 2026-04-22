@@ -9,6 +9,21 @@ public abstract class BaseCharacter : MonoBehaviour, IDamageable
     [SerializeField] protected float maxHealth = 100f;
     protected float currentHealth;
 
+    public InventoryManager Inventory { get; private set; }
+
+    protected virtual void Awake()
+    {
+        // Karakter uyanýrken üzerindeki Manager'ý bulur
+        Inventory = GetComponent<InventoryManager>();
+
+        if (Inventory == null)
+        {
+            // Eðer yoksa, çalýþma anýnda otomatik ekleyelim (Hata almaný önler)
+            Inventory = gameObject.AddComponent<InventoryManager>();
+            Debug.LogWarning($"{gameObject.name} üzerinde InventoryManager yoktu, otomatik eklendi.");
+        }
+    }
+
     // Saðlýk deðiþikliðini dinlemek için event (UI vb. için)
     public event Action<float, float> OnHealthChanged; // (current, max)
 

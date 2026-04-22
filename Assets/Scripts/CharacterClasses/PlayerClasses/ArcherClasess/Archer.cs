@@ -6,7 +6,7 @@ public class Archer : PlayerCharacter, ISpecialSkill, IUltimateSkill
 {
     private Animator animator;
     private Rigidbody rb;
-
+    
 
     [Header("Archer Özellikleri")]
     [SerializeField] private float attackDamage = 10f;
