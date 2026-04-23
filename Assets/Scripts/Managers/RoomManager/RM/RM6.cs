@@ -8,7 +8,12 @@ public class RM6 : MonoBehaviour
     public List<string> correctSequence;
 
     [Header("Referanslar")]
-    public Door targetDoor; 
+    public Door targetDoor;
+
+
+    [Header("Key Spawn Settings")]
+    public GameObject keyPrefab;
+    public Transform spawnPoint;
 
     private int currentStepIndex = 0; 
     private List<StepSensor> pressedSteps = new List<StepSensor>(); 
@@ -40,6 +45,10 @@ public class RM6 : MonoBehaviour
 
     void CompletePuzzle()
     {
+        if (keyPrefab != null && spawnPoint != null)
+        {
+            Instantiate(keyPrefab, spawnPoint.position, spawnPoint.rotation);
+        }
         Debug.Log("Bulmaca çözüldü! Kapý kilidi açýldý.");
         if (targetDoor != null)
         {
