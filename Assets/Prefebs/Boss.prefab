@@ -369,9 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14af86cb40c24244fb95fa56d8d9a31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 1000
   attackDistance: 2
-  jumpAttackRange: 10
   meleeDamage: 15
   jumpDamage: 30
   attackRate: 2.7

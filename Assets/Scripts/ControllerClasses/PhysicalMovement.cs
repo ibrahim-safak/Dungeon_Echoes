@@ -21,8 +21,6 @@ public class PhysicalMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         
         animator = GetComponent<Animator>();
-
-       
     }
 
     private void FixedUpdate()
@@ -31,26 +29,33 @@ public class PhysicalMovement : MonoBehaviour
         MoveCharacter();
     }
 
-    
     public void MoveCharacter()
     {
-        if(Input.GetKey(KeyCode.W))
+        Vector3 move = Vector3.zero;
+
+        if (Input.GetKey(KeyCode.W))
         {
-            rb.MovePosition(transform.position + transform.forward * moveSpeed * Time.deltaTime);
+            move += transform.forward;
         }
-        if(Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
-            rb.MovePosition(transform.position - transform.forward * moveSpeed * Time.deltaTime);
+            move -= transform.forward;
         }
-        if(Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
-            rb.MovePosition(transform.position - transform.right * moveSpeed * Time.deltaTime);
+            move -= transform.right;
         }
-        if(Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
-            rb.MovePosition(transform.position + transform.right * moveSpeed * Time.deltaTime);
+            move += transform.right;
         }
 
+        if (move.sqrMagnitude > 0f)
+        {
+            // Normalize ile çapraz hareket hızını sabit tutuyoruz
+            Vector3 displacement = move.normalized * moveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + displacement);
+        }
     }
 
     public void Jump()
@@ -58,7 +63,6 @@ public class PhysicalMovement : MonoBehaviour
         if (isGrounded)
         {
             rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }

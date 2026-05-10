@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class Door : MonoBehaviour, IInteractable
 {
     [Header("Ayarlar")]
     public bool isLocked = false;
@@ -16,19 +16,8 @@ public class Door : MonoBehaviour
     private bool isOpen = false;
     private Coroutine closeCoroutine;
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            if (Input.GetKeyDown(interactKey))
-            {
-                
-                Interact(other.gameObject);
-            }
-        }
-    }
-
-    private void Interact(GameObject player)
+   
+    public void Interact(GameObject player)
     {
         // 1. ADIM: Kapı kilitli mi kontrol et?
         if (isLocked)
