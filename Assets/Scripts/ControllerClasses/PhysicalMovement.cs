@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicalMovement : MonoBehaviour
 {
-    [Header("Fizik Ayarlar�")]
-    [SerializeField] private float moveSpeed = 6f;
+    private Animator animator;
+    [Header("Fizik Ayarları")]
+    [SerializeField] public float moveSpeed = 6f;
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private LayerMask groundLayer; 
 
@@ -18,23 +19,43 @@ public class PhysicalMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        rb.interpolation = RigidbodyInterpolation.Interpolate;
         
-        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
         CheckGround();
+        MoveCharacter();
     }
 
-    public void MoveCharacter(Vector3 direction)
+    public void MoveCharacter()
     {
-        Vector3 targetVelocity = direction * moveSpeed;
+        Vector3 move = Vector3.zero;
 
-        targetVelocity.y = rb.velocity.y;
+        if (Input.GetKey(KeyCode.W))
+        {
+            move += transform.forward;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            move -= transform.forward;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            move -= transform.right;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            move += transform.right;
+        }
 
-        rb.velocity = targetVelocity;
+        if (move.sqrMagnitude > 0f)
+        {
+            // Normalize ile çapraz hareket hızını sabit tutuyoruz
+            Vector3 displacement = move.normalized * moveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + displacement);
+        }
     }
 
     public void Jump()
@@ -42,7 +63,6 @@ public class PhysicalMovement : MonoBehaviour
         if (isGrounded)
         {
             rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }

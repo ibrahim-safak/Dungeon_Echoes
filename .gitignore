@@ -26,3 +26,5 @@
 # İşletim sistemi dosyaları
 .DS_Store
 Thumbs.db
+.vs/
+[Vv]s/

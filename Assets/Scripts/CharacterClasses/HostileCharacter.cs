@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class HostileCharacter : BaseCharacter
 {
-    public override float Health => throw new System.NotImplementedException();
+    
+
+    protected override void Start()
+    {
+        base.Start();
+        
+    }
 
     public override void die()
     {
-        throw new System.NotImplementedException();
+        
     }
 
-    
+    public virtual void Attack()
+    {
+        
+    }
 }
